@@ -67,9 +67,10 @@ export const Home: React.FC = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
+          {/* Updated Image: Abstract Data / Evidence / Structure (No neurons) */}
           <img 
-            src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=2070" 
-            alt="Abstract Healthcare Network" 
+            src="https://images.unsplash.com/photo-1558494949-ef5209529422?auto=format&fit=crop&q=80&w=2013" 
+            alt="Healthcare Data Evidence and Value" 
             className="w-full h-full object-cover"
           />
           {/* Advanced Overlay for Depth */}
