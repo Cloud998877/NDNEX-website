@@ -190,63 +190,146 @@ export const DISEASE_AREAS = [
   "X-linked Hypophosphatemia (XLH)"
 ];
 
+// Helper to get logo URL.
+const getLogo = (domain: string) => `https://logo.clearbit.com/${domain}`;
+
 export const CLIENTS: Client[] = [
-  { name: "Ahn-Gook" },
-  { name: "Amgen" },
-  { name: "Astellas" },
-  { name: "AstraZeneca" },
-  { name: "BeOne" }, 
-  { name: "Binex" },
-  { name: "Biogen" },
-  { name: "Boehringer Ingelheim" },
-  { name: "Bristol Myers Squibb" },
-  { name: "Chong Kun Dang" },
-  { name: "CSL Behring" },
-  { name: "Daewoo" },
-  { name: "Daewoong" },
-  { name: "Daewon" },
-  { name: "Daiichi-Sankyo" },
-  { name: "Dongkook" },
-  { name: "GSK" },
-  { name: "Guerbet" },
-  { name: "Hana" },
-  { name: "Handok" },
-  { name: "Hanlim" },
-  { name: "Huons" },
-  { name: "Hyundai" },
-  { name: "Ipsen" },
-  { name: "Janssen" },
-  { name: "Jeil" },
-  { name: "JW" },
-  { name: "Kukje" },
-  { name: "Kyowa Kirin" },
-  { name: "Lilly" },
-  { name: "LitePharmTech" },
-  { name: "Merck" },
-  { name: "Mitsubishi Tanabe" },
-  { name: "MSD" },
-  { name: "Myungin" },
-  { name: "Myungmoon" },
-  { name: "Novartis" },
-  { name: "Novo Nordisk" },
-  { name: "Ono" },
-  { name: "Optus" },
-  { name: "Otsuka" },
-  { name: "Pfizer" },
-  { name: "PharmaEssentia" },
-  { name: "PPD" },
-  { name: "Roche" },
-  { name: "Samchundang" },
-  { name: "Samil" },
-  { name: "Samjin" },
-  { name: "Sanofi" },
-  { name: "Santen" },
-  { name: "Servier" },
-  { name: "Shin Poong" },
-  { name: "Taejoon" },
-  { name: "Takeda" },
-  { name: "UCB" },
-  { name: "WhanIn" },
-  { name: "Yooyoung" },
-  { name: "Youngjin" }
+  { 
+    name: "Ahn-Gook", 
+    logo: "https://www.awonder.co.kr/shopimages/ahngookthc/all_og__20250611165401phpFY489X.jpg",
+    link: "https://www.ahn-gook.com/" 
+  },
+  { name: "Amgen", logo: getLogo("amgen.com"), link: "https://www.amgen.co.kr/" },
+  { name: "Astellas", logo: getLogo("astellas.com"), link: "https://www.astellas.com/kr/" },
+  { name: "AstraZeneca", logo: getLogo("astrazeneca.com"), link: "https://www.astrazeneca.co.kr/" },
+  { 
+    name: "BeOne", 
+    logo: "https://cdn.cookielaw.org/logos/51fa3978-59cb-4e5a-8700-81a96d2641f1/01959608-9da4-7326-803e-18390b0b228b/e8c3961c-efcf-4274-bdc6-c0749adc1e27/Beone.png", 
+    link: "https://beonemedicines.kr/" 
+  }, 
+  { 
+    name: "Binex", 
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKUe7AGF4_5o92a1W5wNK98oZze9Q9xyVFQ&s", 
+    link: "http://www.bi-nex.com/" 
+  },
+  { 
+    name: "Biogen", 
+    logo: "https://kr.biogen.com/content/dam/corporate/international/global/en-US/global/OG-images/og_biogen_logo.jpg", 
+    link: "https://www.biogen.com/home.html" 
+  },
+  { name: "Boehringer Ingelheim", logo: getLogo("boehringer-ingelheim.com"), link: "https://www.bikr.co.kr/" },
+  { name: "Bristol Myers Squibb", logo: getLogo("bms.com"), link: "https://www.bms.com/kr" },
+  { name: "Chong Kun Dang", logo: getLogo("ckdpharm.com"), link: "http://www.ckdpharm.com/" },
+  { 
+    name: "CSL Behring", 
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMY3huhMI5wFlSO_IDyh3c5atkxl7cb9CVng&s", 
+    link: "https://www.cslbehring.co.kr/" 
+  },
+  { 
+    name: "Daewoo", 
+    logo: "https://i.ytimg.com/vi/an1DMelQsAk/maxresdefault.jpg", 
+    link: "http://www.dwpharm.co.kr/" 
+  },
+  { name: "Daewoong", logo: getLogo("daewoong.co.kr"), link: "https://www.daewoong.co.kr/" },
+  { name: "Daewon", logo: getLogo("daewonpharm.com"), link: "https://www.daewonpharm.com/" },
+  { name: "Daiichi-Sankyo", logo: getLogo("daiichisankyo.com"), link: "http://www.daiichisankyo.co.kr/" },
+  { name: "Dongkook", logo: getLogo("dkpharm.co.kr"), link: "https://www.dkpharm.co.kr/" },
+  { 
+    name: "GSK", 
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSh8MPJ3g3BQc9iv2V6AZ5kckB5LOA0L5D8Q&s", 
+    link: "https://kr.gsk.com/" 
+  },
+  { name: "Guerbet", logo: getLogo("guerbet.com"), link: "https://www.guerbet.com/ko-kr/" },
+  { 
+    name: "Hana", 
+    logo: "https://cdn.pharmnews.com/news/photo/200807/img_38694_6537_36618.jpg", 
+    link: "http://www.hanaph.co.kr/index.do" 
+  },
+  { name: "Handok", logo: getLogo("handok.co.kr"), link: "https://www.handok.co.kr/" },
+  { name: "Hanlim", logo: getLogo("hanlim.com"), link: "http://www.hanlim.com/" },
+  { name: "Huons", logo: getLogo("huons.com"), link: "http://www.huons.com/" },
+  { name: "Hyundai", logo: getLogo("hyundaipharm.co.kr"), link: "http://www.hyundaipharm.co.kr/" },
+  { name: "Ipsen", logo: getLogo("ipsen.com"), link: "https://www.ipsen.com/" },
+  { name: "Janssen", logo: getLogo("janssen.com"), link: "https://www.janssen.com/korea/" },
+  { name: "Jeil", logo: getLogo("jeilpharm.co.kr"), link: "https://www.jeilpharm.co.kr/" },
+  { name: "JW", logo: getLogo("jw-pharma.co.kr"), link: "https://www.jw-pharma.co.kr/" },
+  { name: "Kukje", logo: getLogo("kukjepharm.co.kr"), link: "http://www.kukjepharm.co.kr/" },
+  { 
+    name: "Kyowa Kirin", 
+    logo: "https://www.kyowakirin.com/media_center/news_releases/2019/images/e20190205_01.png", 
+    link: "https://www.kyowakirin.com/kr/" 
+  },
+  { 
+    name: "Lilly", 
+    logo: "https://images.seeklogo.com/logo-png/8/3/lilly-logo-png_seeklogo-84218.png", 
+    link: "https://www.lilly.co.kr/" 
+  },
+  { 
+    name: "LitePharmTech", 
+    logo: "https://logo-resources.thevc.kr/organizations/200x200/153903dd1c2daac632e660e27ad7061f3c9516a6cbcd3cb174f5a5530cdf15ee_1674195948833225.jpg", 
+    link: "http://www.litepharm.com/" 
+  },
+  { name: "Merck", logo: getLogo("merckgroup.com"), link: "https://www.merckgroup.com/kr-ko" }, 
+  { 
+    name: "Mitsubishi Tanabe", 
+    logo: "https://lh4.googleusercontent.com/proxy/ApyTbjXCwmDyUkIxf35xp664fejbNw8B3vUF4Cs_umk_XXjqj5m5ItdYto2g_82CFSdRap-GYXfo6K2zOzhUnab3eA", 
+    link: "http://www.mt-pharma-korea.com/" 
+  },
+  { name: "MSD", logo: getLogo("msd.com"), link: "https://www.msd-korea.com/" },
+  { 
+    name: "Myungin", 
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsuU8v1hmqs_kqGeI56SHIGga-gnusVg88SA&s", 
+    link: "http://myunginph.co.kr/main/ko/index.html" 
+  },
+  { name: "Myungmoon", logo: getLogo("mmpharm.co.kr"), link: "http://www.mmpharm.co.kr/" },
+  { name: "Novartis", logo: getLogo("novartis.com"), link: "https://www.novartis.co.kr/" },
+  { name: "Novo Nordisk", logo: getLogo("novonordisk.com"), link: "https://www.novonordisk.co.kr/" },
+  { name: "Ono", logo: getLogo("ono-pharma.com"), link: "https://kr.ono-pharma.com/" },
+  { 
+    name: "Optus", 
+    logo: "https://cdn-pro-web-217-134.cdn-nhncommerce.com/optuspharm76_godomall_com/data/commonimg/ico_kr.png", 
+    link: "http://optuspharm.com/" 
+  },
+  { 
+    name: "Otsuka", 
+    logo: "https://www.otsuka.co.kr/img/user/company/ci_intro.png", 
+    link: "http://www.otsuka.co.kr/" 
+  },
+  { name: "Pfizer", logo: getLogo("pfizer.com"), link: "https://www.pfizer.co.kr/" },
+  { name: "PharmaEssentia", logo: getLogo("pharmaessentia.com"), link: "https://kr.pharmaessentia.com/modules/catalogue_history2/cg_index.html" },
+  { name: "PPD", logo: getLogo("ppd.com"), link: "https://www.ppd.com/" },
+  { name: "Roche", logo: getLogo("roche.com"), link: "https://www.roche.co.kr/" },
+  { name: "Samchundang", logo: getLogo("scd.co.kr"), link: "http://www.scd.co.kr/" },
+  { 
+    name: "Samil", 
+    logo: "https://www.docdocdoc.co.kr/news/photo/201704/1041167_1102755_213.jpg", 
+    link: "http://www.samil-pharm.com/" 
+  },
+  { name: "Samjin", logo: getLogo("samjinpharm.co.kr"), link: "https://www.samjinpharm.co.kr/" },
+  { name: "Santen", logo: getLogo("santen.com"), link: "http://www.santen.co.kr/" },
+  { name: "Sanofi", logo: "https://cdn.worldvectorlogo.com/logos/sanofi-logo-2022.svg", link: "https://www.sanofi.co.kr/" },
+  { name: "Servier", logo: getLogo("servier.com"), link: "https://www.servier.co.kr/" },
+  { name: "Shin Poong", logo: getLogo("shinpoong.co.kr"), link: "https://shinpoong.co.kr/" },
+  { name: "Taejoon", logo: getLogo("taejoon.co.kr"), link: "https://www.taejoon.co.kr/" },
+  { 
+    name: "Takeda", 
+    logo: "https://assets-dam.takeda.com/image/upload/f_auto/q_auto/legacy-dotcom/siteassets/sk-sk/home/who-we-are/company-information/history/symbols/ChangestotheCorporateLogo_block_004", 
+    link: "https://www.takeda.com/ko-kr" 
+  },
+  { name: "UCB", logo: getLogo("ucb.com"), link: "https://www.ucbkorea.co.kr/" },
+  { 
+    name: "WhanIn", 
+    logo: "https://file.alphasquare.co.kr/media/images/stock_logo/kr/016580.png", 
+    link: "https://www.whanin.com/" 
+  },
+  { 
+    name: "Yooyoung", 
+    logo: "https://www.khanews.com/news/photo/201010/20992_3891.jpg", 
+    link: "https://www.yypharm.co.kr/" 
+  },
+  { 
+    name: "Youngjin", 
+    logo: "https://i.namu.wiki/i/zwOhRUjCJYlBSDnzdjys5RV2DisTcDHT96Lc6pgt38D_Qn9Aa9j2-7JI5iEC4kI2IP9Uz8ZHUjcsD5NPJJLO4g.svg", 
+    link: "https://www.yungjin.co.kr/" 
+  }
 ].sort((a, b) => a.name.localeCompare(b.name));
