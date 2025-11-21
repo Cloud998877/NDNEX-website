@@ -1,5 +1,5 @@
 
-import { Service, TeamMember, Publication, Client } from './types';
+import { Service, TeamMember, Publication, Client, TherapeuticArea } from './types';
 
 export const COMPANY_INFO = {
   name: "NDNEX",
@@ -120,74 +120,113 @@ export const PUBLICATIONS: Publication[] = [
   }
 ];
 
-export const DISEASE_AREAS = [
-  "Acute Lymphoblastic Leukemia",
-  "Acute Myeloid Leukemia",
-  "AL Amyloidosis",
-  "Alopecia Areata",
-  "Amyloid Light-chain Amyloidosis",
-  "Aplastic Anemia",
-  "Asthma",
-  "Atopic Dermatitis",
-  "Benign Prostatic Hyperplasia (BPH)",
-  "Biliary Tract Cancer",
-  "Breast Cancer",
-  "CAPS/Periodic Fever Syndrome",
-  "Cardiomyopathy",
-  "Cervical Cancer",
-  "Chronic Myeloid Leukemia",
-  "Chronic Obstructive Pulmonary Disease (COPD)",
-  "Colorectal Cancer",
-  "Constipation",
-  "Covid-19",
-  "Cutaneous T-Cell Lymphoma",
-  "Diabetes Mellitus",
-  "Diffuse Large B-Cell Lymphoma",
-  "Dry Eye",
-  "Epilepsy",
-  "Esophageal Squamous-Cell Carcinoma",
-  "Eye Conjunctivitis",
-  "Gastric Cancer",
-  "Gastritis",
-  "Glaucoma",
-  "Glioma",
-  "Graft-versus-host Disease (GVHD)",
-  "Head and Neck Cancer",
-  "Heart Failure",
-  "Hepatocellular Carcinoma",
-  "Hereditary Angioedema",
-  "Hodgkin Lymphoma",
-  "Hyperlipidemia",
-  "Melanoma",
-  "Metastatic Castration-Resistant Prostate Cancer",
-  "MRSA",
-  "Multiple Myeloma",
-  "Multiple Sclerosis",
-  "Mycosis Fungoides and Sézary Syndrome",
-  "Myeloproliferative Neoplasm",
-  "Neuromyelitis Optica Spectrum Disorder",
-  "Non-Erosive Reflux Disease",
-  "Non-Small Cell Lung Cancer",
-  "Osteoarthritis",
-  "Osteoporosis",
-  "Ovarian Cancer",
-  "Parkinson’s Disease",
-  "Philadelphia Chromosome-positive Leukemia",
-  "Polycythemia Vera",
-  "Primary Biliary Cholangitis",
-  "Prostate Cancer",
-  "Prurigo Nodularis",
-  "Psoriasis",
-  "Renal Cell Carcinoma",
-  "Rheumatoid Arthritis",
-  "Short Bowel Syndrome",
-  "Small-cell Lung Cancer",
-  "Spinal Muscular Atrophy",
-  "Tardive Dyskinesia",
-  "Tenosynovial Giant Cell Tumor",
-  "Transthyretin Amyloid Cardiomyopathy",
-  "Urothelial Carcinoma",
-  "X-linked Hypophosphatemia (XLH)"
+export const DISEASE_AREAS: string[] = []; // Deprecated, keeping for compatibility if needed, but we use THERAPEUTIC_AREAS now.
+
+export const THERAPEUTIC_AREAS: TherapeuticArea[] = [
+  {
+    category: "Oncology",
+    diseases: [
+      "Acute Lymphoblastic Leukemia",
+      "Acute Myeloid Leukemia",
+      "Biliary Tract Cancer",
+      "Breast Cancer",
+      "Cervical Cancer",
+      "Chronic Myeloid Leukemia",
+      "Colorectal Cancer",
+      "Cutaneous T-Cell Lymphoma",
+      "Diffuse Large B-Cell Lymphoma",
+      "Esophageal Squamous-Cell Carcinoma",
+      "Gastric Cancer",
+      "Glioma",
+      "Head and Neck Cancer",
+      "Hepatocellular Carcinoma",
+      "Hodgkin Lymphoma",
+      "Melanoma",
+      "Metastatic Castration-Resistant Prostate Cancer",
+      "Multiple Myeloma",
+      "Mycosis Fungoides and Sézary Syndrome",
+      "Myeloproliferative Neoplasm",
+      "Non-Small Cell Lung Cancer",
+      "Ovarian Cancer",
+      "Philadelphia Chromosome-positive Leukemia",
+      "Polycythemia Vera",
+      "Prostate Cancer",
+      "Renal Cell Carcinoma",
+      "Small-cell Lung Cancer",
+      "Tenosynovial Giant Cell Tumor",
+      "Urothelial Carcinoma"
+    ]
+  },
+  {
+    category: "Endocrinology & Metabolism",
+    diseases: [
+      "Diabetes Mellitus",
+      "Hyperlipidemia",
+      "Short Bowel Syndrome",
+      "X-linked Hypophosphatemia (XLH)"
+    ]
+  },
+  {
+    category: "Cardiovascular",
+    diseases: [
+      "Cardiomyopathy",
+      "Heart Failure",
+      "Transthyretin Amyloid Cardiomyopathy"
+    ]
+  },
+  {
+    category: "Neurology",
+    diseases: [
+      "Epilepsy",
+      "Multiple Sclerosis",
+      "Neuromyelitis Optica Spectrum Disorder",
+      "Parkinson’s Disease",
+      "Spinal Muscular Atrophy",
+      "Tardive Dyskinesia"
+    ]
+  },
+  {
+    category: "Dermatology & Allergy",
+    diseases: [
+      "Alopecia Areata",
+      "Atopic Dermatitis",
+      "Psoriasis",
+      "Prurigo Nodularis"
+    ]
+  },
+  {
+    category: "Gastroenterology & Hepatology",
+    diseases: [
+      "Constipation",
+      "Gastritis",
+      "Non-Erosive Reflux Disease",
+      "Primary Biliary Cholangitis"
+    ]
+  },
+  {
+    category: "Hematology & Infectious",
+    diseases: [
+      "AL Amyloidosis",
+      "Aplastic Anemia",
+      "Covid-19",
+      "Graft-versus-host Disease (GVHD)",
+      "MRSA"
+    ]
+  },
+  {
+    category: "Musculoskeletal & Others",
+    diseases: [
+      "Osteoarthritis",
+      "Osteoporosis",
+      "Rheumatoid Arthritis",
+      "Benign Prostatic Hyperplasia (BPH)",
+      "CAPS/Periodic Fever Syndrome",
+      "Dry Eye",
+      "Eye Conjunctivitis",
+      "Glaucoma",
+      "Hereditary Angioedema"
+    ]
+  }
 ];
 
 // Helper to get logo URL.
@@ -196,10 +235,10 @@ const getLogo = (domain: string) => `https://logo.clearbit.com/${domain}`;
 export const CLIENTS: Client[] = [
   { 
     name: "Ahn-Gook", 
-    logo: "https://www.awonder.co.kr/shopimages/ahngookthc/all_og__20250611165401phpFY489X.jpg",
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 100'%3E%3Cg transform='translate(10,10) scale(0.8)'%3E%3Cpath d='M20,70 Q10,40 40,20 Q70,10 90,30 Q100,50 80,80 Q50,90 20,70 Z' fill='%23E60012' /%3E%3Cpath d='M20,70 L45,45 M25,75 L50,50 M30,80 L55,55 M35,85 L60,60 M40,90 L65,65 M45,95 L70,70 M50,100 L75,75 M55,105 L80,80 M60,110 L85,85' stroke='white' stroke-width='3' /%3E%3C/g%3E%3Ctext x='90' y='60' font-family='sans-serif' font-weight='bold' font-size='40' fill='%23333'%3E안국약품(주)%3C/text%3E%3C/svg%3E",
     link: "https://www.ahn-gook.com/" 
   },
-  { name: "Amgen", logo: getLogo("amgen.com"), link: "https://www.amgen.co.kr/" },
+  { name: "Amgen", logo: "https://logos-world.net/wp-content/uploads/2023/06/Amgen-Logo.jpg", link: "https://www.amgen.co.kr/" },
   { name: "Astellas", logo: getLogo("astellas.com"), link: "https://www.astellas.com/kr/" },
   { name: "AstraZeneca", logo: getLogo("astrazeneca.com"), link: "https://www.astrazeneca.co.kr/" },
   { 
@@ -218,7 +257,7 @@ export const CLIENTS: Client[] = [
     link: "https://www.biogen.com/home.html" 
   },
   { name: "Boehringer Ingelheim", logo: getLogo("boehringer-ingelheim.com"), link: "https://www.bikr.co.kr/" },
-  { name: "Bristol Myers Squibb", logo: getLogo("bms.com"), link: "https://www.bms.com/kr" },
+  { name: "Bristol Myers Squibb", logo: "https://www.bms.com/media/media-library/corporate-resources/bms-logo/_jcr_content/par/subject_copy_copy_co_969178463.respimg.jpg/1731506928883/bms-logo-rgb-pos-with-border.jpg", link: "https://www.bms.com/kr" },
   { name: "Chong Kun Dang", logo: getLogo("ckdpharm.com"), link: "http://www.ckdpharm.com/" },
   { 
     name: "CSL Behring", 
