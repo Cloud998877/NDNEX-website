@@ -5,6 +5,47 @@ import { ArrowRight, CheckCircle2, TrendingUp, Award, Users, Globe, ChevronRight
 import { CLIENTS } from '../constants';
 
 export const Home: React.FC = () => {
+  // List of clients that need extra large logo display (approx 2x)
+  const EXTRA_LARGE_LOGOS = [
+    "Ahn-Gook"
+  ];
+
+  // List of clients that need larger logo display (approx 1.5x)
+  const LARGE_LOGOS = [
+    "Daewon", 
+    "Daewoo", 
+    "Daewoong", 
+    "Daiichi-Sankyo", 
+    "LitePharmTech",
+    "Myungin",
+    "PharmaEssentia",
+    "Samchundang",
+    "Samjin",
+    "Santen",
+    "Taejoon"
+  ];
+
+  // List of clients that need medium logo display (approx 0.8x)
+  const MEDIUM_LOGOS = [
+    // Optus moved to EXTRA_SMALL
+  ];
+
+  // List of clients that need medium-small logo display (approx 0.6x)
+  const MEDIUM_SMALL_LOGOS = [
+    "Kyowa Kirin"
+  ];
+
+  // List of clients that need smaller logo display (approx 0.5x)
+  const SMALL_LOGOS = [
+    "CSL Behring",
+    "Sanofi"
+  ];
+
+  // List of clients that need extra small logo display (approx 0.4x)
+  const EXTRA_SMALL_LOGOS = [
+    "Optus"
+  ];
+
   return (
     <div className="flex flex-col w-full overflow-hidden font-sans">
       {/* Professional Hero Section with Background Image */}
@@ -124,7 +165,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Clients Grid - TEXT ONLY VERSION */}
+      {/* Clients Grid - LOGO + TEXT Fallback VERSION + LINKS */}
       <section className="py-24 bg-ndnex-dark relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -144,14 +185,62 @@ export const Home: React.FC = () => {
              </Link>
            </div>
            
-           {/* Text Card Grid */}
-           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+           {/* Compact Client Grid */}
+           <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
              {CLIENTS.map((client, idx) => {
-               return (
-                 <div key={idx} className="bg-white h-20 rounded-lg flex items-center justify-center px-4 hover:bg-blue-50 hover:scale-[1.02] transition-all duration-300 shadow-lg cursor-default group">
-                   <span className="text-sm md:text-base font-display font-bold text-ndnex-dark group-hover:text-ndnex-blue transition-colors text-center leading-tight">
-                     {client.name}
-                   </span>
+               const isExtraLarge = EXTRA_LARGE_LOGOS.includes(client.name);
+               const isLarge = LARGE_LOGOS.includes(client.name);
+               const isMedium = MEDIUM_LOGOS.includes(client.name);
+               const isMediumSmall = MEDIUM_SMALL_LOGOS.includes(client.name);
+               const isSmall = SMALL_LOGOS.includes(client.name);
+               const isExtraSmall = EXTRA_SMALL_LOGOS.includes(client.name);
+               
+               let sizeClass = 'h-7 md:h-8'; // Default Standard Size (approx 32px)
+               if (isExtraLarge) sizeClass = 'h-14 md:h-16'; // Extra Large (2x)
+               else if (isLarge) sizeClass = 'h-10 md:h-12'; // Large (1.5x)
+               else if (isMedium) sizeClass = 'h-6 md:h-7'; // Medium (0.8x approx 26px)
+               else if (isMediumSmall) sizeClass = 'h-4 md:h-5'; // Medium Small (0.6x)
+               else if (isSmall) sizeClass = 'h-3.5 md:h-4'; // Small (0.5x)
+               else if (isExtraSmall) sizeClass = 'h-2.5 md:h-3'; // Extra Small (0.4x)
+
+               const content = (
+                 <>
+                   {client.logo ? (
+                     <div className="w-full h-full flex items-center justify-center">
+                        <img 
+                          src={client.logo} 
+                          alt={client.name} 
+                          className={`${sizeClass} w-auto max-w-[90%] object-contain transition-all duration-500`}
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                            // Fallback to showing text
+                            const sibling = e.currentTarget.nextSibling as HTMLElement;
+                            if (sibling) sibling.style.display = 'block';
+                          }}
+                        />
+                        <span className="hidden text-[10px] md:text-xs font-bold text-ndnex-dark text-center leading-tight">{client.name}</span>
+                     </div>
+                   ) : (
+                     <span className="text-[10px] md:text-xs font-bold text-ndnex-dark text-center leading-tight px-1">
+                       {client.name}
+                     </span>
+                   )}
+                 </>
+               );
+
+               return client.link ? (
+                 <a 
+                   key={idx} 
+                   href={client.link} 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="bg-white h-16 rounded-lg flex items-center justify-center p-2 hover:bg-blue-50 hover:scale-[1.02] transition-all duration-300 shadow-lg cursor-pointer group overflow-hidden relative"
+                 >
+                   {content}
+                 </a>
+               ) : (
+                 <div key={idx} className="bg-white h-16 rounded-lg flex items-center justify-center p-2 hover:bg-blue-50 hover:scale-[1.02] transition-all duration-300 shadow-lg cursor-default group overflow-hidden relative">
+                   {content}
                  </div>
                );
              })}
