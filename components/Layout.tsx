@@ -1,7 +1,6 @@
 import React from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
-import { ChatBot } from './ChatBot';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -15,7 +14,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       <Footer />
-      <ChatBot />
     </div>
   );
 };
