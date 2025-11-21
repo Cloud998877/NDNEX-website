@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { COMPANY_INFO } from '../constants';
 import { MapPin, Phone, Mail, Linkedin } from 'lucide-react';
@@ -28,7 +29,7 @@ export const Footer: React.FC = () => {
               {COMPANY_INFO.mission} We deliver reliable evidence and strategic insights to navigate the complex healthcare landscape.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company-beta/13344154/" target="_blank" rel="noreferrer" className="bg-white/10 p-2 rounded-full hover:bg-ndnex-orange transition-colors border border-white/10">
+              <a href="https://www.linkedin.com/company/ndnex/?originalSubdomain=kr" target="_blank" rel="noreferrer" className="bg-white/10 p-2 rounded-full hover:bg-ndnex-orange transition-colors border border-white/10">
                 <Linkedin size={20} />
               </a>
             </div>
