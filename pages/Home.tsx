@@ -88,15 +88,15 @@ export const Home: React.FC = () => {
               <span className="text-xs font-bold text-white tracking-[0.2em] uppercase font-display">Evidence-Based Healthcare Solutions</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-8 font-display text-white drop-shadow-2xl animate-fade-in-up">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-8 font-display text-white drop-shadow-2xl animate-fade-in-up">
               Scientific Rigor Meets <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-ndnex-orange via-white to-blue-200">
-                Market Strategy
+                Healthcare Value
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-3xl font-light drop-shadow-sm animate-fade-in-up delay-100">
-              NDNEX bridges the gap between clinical data and market success. We provide world-class HEOR, Market Access, and Data Analytics to secure patient access.
+              NDNEX bridges the gap between clinical data and reimbursement success. We provide world-class HEOR, Market Access, and Data Analytics to secure patient access.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-5 animate-fade-in-up delay-200">
