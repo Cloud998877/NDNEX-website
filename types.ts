@@ -25,6 +25,8 @@ export interface Publication {
 
 export interface Client {
   name: string;
+  logo?: string;
+  link?: string;
 }
 
 export interface ChatMessage {
