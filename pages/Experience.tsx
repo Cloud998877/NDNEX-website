@@ -1,9 +1,24 @@
 
 import React from 'react';
-import { PUBLICATIONS, DISEASE_AREAS } from '../constants';
-import { BookOpen, Activity, ExternalLink, ArrowUpRight } from 'lucide-react';
+import { PUBLICATIONS, THERAPEUTIC_AREAS } from '../constants';
+import { BookOpen, Activity, ExternalLink, ArrowUpRight, Heart, Brain, Eye, Bone, Stethoscope, Pill, Thermometer, Droplet, Zap } from 'lucide-react';
 
 export const Experience: React.FC = () => {
+
+  // Helper to get icon based on category
+  const getCategoryIcon = (category: string) => {
+    if (category.includes("Oncology")) return <Activity />;
+    if (category.includes("Endocrinology")) return <Droplet />;
+    if (category.includes("Cardiovascular")) return <Heart />;
+    if (category.includes("Neurology")) return <Brain />;
+    if (category.includes("Dermatology")) return <Zap />;
+    if (category.includes("Gastroenterology")) return <Pill />;
+    if (category.includes("Hematology")) return <Thermometer />;
+    if (category.includes("Musculoskeletal")) return <Bone />;
+    if (category.includes("Ophthalmology")) return <Eye />;
+    return <Stethoscope />;
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
        {/* Header with Background */}
@@ -26,32 +41,42 @@ export const Experience: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         
-        {/* Disease Areas - Tag Cloud Style */}
-        <div className="mb-24 bg-white p-10 md:p-14 rounded-3xl border border-gray-200 shadow-lg relative overflow-hidden">
-           <div className="absolute top-0 right-0 p-10 opacity-[0.03] pointer-events-none">
-              <Activity size={300} />
-           </div>
-          <div className="flex items-center gap-4 mb-10 border-b border-gray-100 pb-6 relative z-10">
-            <div className="p-3 bg-orange-50 rounded-xl text-ndnex-orange">
-               <Activity size={28} />
-            </div>
-            <h2 className="text-3xl font-bold text-ndnex-dark font-display">Therapeutic Areas</h2>
+        {/* Disease Areas - Categorized Grid Style */}
+        <div className="mb-24">
+          <div className="text-center mb-16">
+             <h2 className="text-sm font-bold text-ndnex-orange uppercase tracking-widest mb-2">Deep Expertise</h2>
+             <h3 className="text-3xl md:text-4xl font-bold text-ndnex-dark font-display">Therapeutic Areas</h3>
           </div>
           
-          <div className="flex flex-wrap gap-2 relative z-10">
-            {DISEASE_AREAS.map((area, idx) => (
-              <span 
-                key={idx} 
-                className="px-4 py-2 bg-white text-gray-600 text-sm font-medium border border-gray-200 rounded-full hover:border-ndnex-blue hover:text-ndnex-blue hover:bg-blue-50 transition-all cursor-default shadow-sm hover:shadow-md"
-              >
-                {area}
-              </span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {THERAPEUTIC_AREAS.map((area, idx) => (
+              <div key={idx} className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
+                {/* Card Header */}
+                <div className="bg-slate-50 p-6 border-b border-gray-100 flex items-center gap-4 group-hover:bg-orange-50/50 transition-colors">
+                   <div className="p-3 bg-white rounded-xl text-ndnex-orange shadow-sm border border-gray-100 group-hover:scale-110 transition-transform duration-300">
+                      {getCategoryIcon(area.category)}
+                   </div>
+                   <h4 className="font-bold text-lg text-ndnex-dark font-display leading-tight">{area.category}</h4>
+                </div>
+                
+                {/* Card Body */}
+                <div className="p-6">
+                   <div className="flex flex-wrap gap-2">
+                      {area.diseases.map((disease, dIdx) => (
+                        <span key={dIdx} className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-50 text-gray-700 border border-gray-100 hover:bg-ndnex-blue/5 hover:text-ndnex-blue hover:border-ndnex-blue/20 transition-colors cursor-default">
+                           <span className="w-1.5 h-1.5 rounded-full bg-ndnex-orange/50 mr-2"></span>
+                           {disease}
+                        </span>
+                      ))}
+                   </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Publications - Academic List Style */}
-        <div>
+        <div className="border-t border-gray-200 pt-24">
           <div className="flex items-center gap-4 mb-12">
             <div className="p-3 bg-blue-50 rounded-xl text-ndnex-blue">
                <BookOpen size={28} />
