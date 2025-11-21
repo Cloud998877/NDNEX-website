@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "ndnex-website-fxju.vercel.app" }
+      ],
+      "destination": "https://ndnex.com/:path*",
+      "permanent": true
+    }
+  ]
+}
