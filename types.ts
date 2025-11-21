@@ -1,3 +1,4 @@
+
 export interface Service {
   id: string;
   title: string;
@@ -24,7 +25,6 @@ export interface Publication {
 
 export interface Client {
   name: string;
-  category: 'Global' | 'Domestic';
 }
 
 export interface ChatMessage {
