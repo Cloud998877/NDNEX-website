@@ -29,6 +29,11 @@ export interface Client {
   link?: string;
 }
 
+export interface TherapeuticArea {
+  category: string;
+  diseases: string[];
+}
+
 export interface ChatMessage {
   role: 'user' | 'model';
   text: string;
