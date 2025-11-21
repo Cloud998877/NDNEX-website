@@ -124,37 +124,42 @@ export const DISEASE_AREAS: string[] = []; // Deprecated, keeping for compatibil
 
 export const THERAPEUTIC_AREAS: TherapeuticArea[] = [
   {
-    category: "Oncology",
+    category: "Oncology: Solid Tumors",
     diseases: [
-      "Acute Lymphoblastic Leukemia",
-      "Acute Myeloid Leukemia",
       "Biliary Tract Cancer",
       "Breast Cancer",
       "Cervical Cancer",
-      "Chronic Myeloid Leukemia",
       "Colorectal Cancer",
-      "Cutaneous T-Cell Lymphoma",
-      "Diffuse Large B-Cell Lymphoma",
       "Esophageal Squamous-Cell Carcinoma",
       "Gastric Cancer",
       "Glioma",
       "Head and Neck Cancer",
       "Hepatocellular Carcinoma",
-      "Hodgkin Lymphoma",
       "Melanoma",
       "Metastatic Castration-Resistant Prostate Cancer",
-      "Multiple Myeloma",
-      "Mycosis Fungoides and Sézary Syndrome",
-      "Myeloproliferative Neoplasm",
       "Non-Small Cell Lung Cancer",
       "Ovarian Cancer",
-      "Philadelphia Chromosome-positive Leukemia",
-      "Polycythemia Vera",
       "Prostate Cancer",
       "Renal Cell Carcinoma",
       "Small-cell Lung Cancer",
       "Tenosynovial Giant Cell Tumor",
       "Urothelial Carcinoma"
+    ]
+  },
+  {
+    category: "Oncology: Hematologic Malignancies",
+    diseases: [
+      "Acute Lymphoblastic Leukemia",
+      "Acute Myeloid Leukemia",
+      "AL Amyloidosis",
+      "Chronic Myeloid Leukemia",
+      "Cutaneous T-Cell Lymphoma",
+      "Diffuse Large B-Cell Lymphoma",
+      "Hodgkin Lymphoma",
+      "Multiple Myeloma",
+      "Mycosis Fungoides and Sézary Syndrome",
+      "Myeloproliferative Neoplasm",
+      "Polycythemia Vera"
     ]
   },
   {
@@ -206,7 +211,6 @@ export const THERAPEUTIC_AREAS: TherapeuticArea[] = [
   {
     category: "Hematology & Infectious",
     diseases: [
-      "AL Amyloidosis",
       "Aplastic Anemia",
       "Covid-19",
       "Graft-versus-host Disease (GVHD)",
@@ -248,7 +252,7 @@ export const CLIENTS: Client[] = [
   }, 
   { 
     name: "Binex", 
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKUe7AGF4_5o92a1W5wNK98oZze9Q9xyVFQ&s", 
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Cpath d='M10 10h180l-20 40H10z' fill='%23DA291C'/%3E%3Ctext x='95' y='43' font-family='Arial, sans-serif' font-weight='bold' font-size='38' fill='white' text-anchor='middle'%3EBINEX%3C/text%3E%3C/svg%3E", 
     link: "http://www.bi-nex.com/" 
   },
   { 
@@ -281,7 +285,7 @@ export const CLIENTS: Client[] = [
   { name: "Guerbet", logo: getLogo("guerbet.com"), link: "https://www.guerbet.com/ko-kr/" },
   { 
     name: "Hana", 
-    logo: "https://cdn.pharmnews.com/news/photo/200807/img_38694_6537_36618.jpg", 
+    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M50 20v160M50 90q60-20 60 90' stroke='%23009FE3' stroke-width='25' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='130' cy='40' r='15' fill='%23F58220'/%3E%3Ctext x='30' y='180' font-family='Arial, sans-serif' font-weight='bold' font-size='24' fill='%2358595B'%3EHanaPharm%3C/text%3E%3C/svg%3E", 
     link: "http://www.hanaph.co.kr/index.do" 
   },
   { name: "Handok", logo: getLogo("handok.co.kr"), link: "https://www.handok.co.kr/" },
@@ -346,15 +350,11 @@ export const CLIENTS: Client[] = [
   },
   { name: "Samjin", logo: getLogo("samjinpharm.co.kr"), link: "https://www.samjinpharm.co.kr/" },
   { name: "Santen", logo: getLogo("santen.com"), link: "http://www.santen.co.kr/" },
-  { name: "Sanofi", logo: "https://cdn.worldvectorlogo.com/logos/sanofi-logo-2022.svg", link: "https://www.sanofi.co.kr/" },
+  { name: "Sanofi", logo: getLogo("sanofi.com"), link: "https://www.sanofi.co.kr/" },
   { name: "Servier", logo: getLogo("servier.com"), link: "https://www.servier.co.kr/" },
   { name: "Shin Poong", logo: getLogo("shinpoong.co.kr"), link: "https://shinpoong.co.kr/" },
   { name: "Taejoon", logo: getLogo("taejoon.co.kr"), link: "https://www.taejoon.co.kr/" },
-  { 
-    name: "Takeda", 
-    logo: "https://assets-dam.takeda.com/image/upload/f_auto/q_auto/legacy-dotcom/siteassets/sk-sk/home/who-we-are/company-information/history/symbols/ChangestotheCorporateLogo_block_004", 
-    link: "https://www.takeda.com/ko-kr" 
-  },
+  { name: "Takeda", logo: getLogo("takeda.com"), link: "https://www.takeda.com/ko-kr" },
   { name: "UCB", logo: getLogo("ucb.com"), link: "https://www.ucbkorea.co.kr/" },
   { 
     name: "WhanIn", 
