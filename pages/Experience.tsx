@@ -1,20 +1,20 @@
 
 import React from 'react';
 import { PUBLICATIONS, THERAPEUTIC_AREAS } from '../constants';
-import { BookOpen, Activity, ExternalLink, ArrowUpRight, Heart, Brain, Eye, Bone, Stethoscope, Pill, Thermometer, Droplet, Zap } from 'lucide-react';
+import { BookOpen, Activity, ExternalLink, ArrowUpRight, Heart, Brain, Eye, Dna, Stethoscope, Pill, Thermometer, Droplet, Zap } from 'lucide-react';
 
 export const Experience: React.FC = () => {
 
   // Helper to get icon based on category
   const getCategoryIcon = (category: string) => {
-    if (category.includes("Oncology")) return <Activity />;
+    if (category.includes("Oncology")) return <Dna />;
     if (category.includes("Endocrinology")) return <Droplet />;
     if (category.includes("Cardiovascular")) return <Heart />;
     if (category.includes("Neurology")) return <Brain />;
     if (category.includes("Dermatology")) return <Zap />;
     if (category.includes("Gastroenterology")) return <Pill />;
     if (category.includes("Hematology")) return <Thermometer />;
-    if (category.includes("Musculoskeletal")) return <Bone />;
+    if (category.includes("Musculoskeletal")) return <Activity />;
     if (category.includes("Ophthalmology")) return <Eye />;
     return <Stethoscope />;
   };
