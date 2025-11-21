@@ -5,20 +5,35 @@ import { ArrowRight, CheckCircle2, TrendingUp, Award, Users, Globe, ChevronRight
 import { CLIENTS } from '../constants';
 
 export const Home: React.FC = () => {
+  // List of clients that need gigantic logo display (approx 4x)
+  const GIGANTIC_LOGOS = [
+    "Daewoo"
+  ];
+
+  // List of clients that need huge logo display (approx 3x)
+  const HUGE_LOGOS = [
+    "Daewoong"
+  ];
+
+  // List of clients that need very large logo display (approx 2.5x)
+  const VERY_LARGE_LOGOS = [
+    "Hyundai",
+    "Myungin",
+    "PharmaEssentia",
+    "Roche"
+  ];
+
   // List of clients that need extra large logo display (approx 2x)
   const EXTRA_LARGE_LOGOS = [
-    "Ahn-Gook"
+    "Ahn-Gook",
+    "LitePharmTech",
+    "Ipsen"
   ];
 
   // List of clients that need larger logo display (approx 1.5x)
   const LARGE_LOGOS = [
     "Daewon", 
-    "Daewoo", 
-    "Daewoong", 
     "Daiichi-Sankyo", 
-    "LitePharmTech",
-    "Myungin",
-    "PharmaEssentia",
     "Samchundang",
     "Samjin",
     "Santen",
@@ -188,6 +203,9 @@ export const Home: React.FC = () => {
            {/* Compact Client Grid */}
            <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
              {CLIENTS.map((client, idx) => {
+               const isGigantic = GIGANTIC_LOGOS.includes(client.name);
+               const isHuge = HUGE_LOGOS.includes(client.name);
+               const isVeryLarge = VERY_LARGE_LOGOS.includes(client.name);
                const isExtraLarge = EXTRA_LARGE_LOGOS.includes(client.name);
                const isLarge = LARGE_LOGOS.includes(client.name);
                const isMedium = MEDIUM_LOGOS.includes(client.name);
@@ -196,7 +214,10 @@ export const Home: React.FC = () => {
                const isExtraSmall = EXTRA_SMALL_LOGOS.includes(client.name);
                
                let sizeClass = 'h-7 md:h-8'; // Default Standard Size (approx 32px)
-               if (isExtraLarge) sizeClass = 'h-14 md:h-16'; // Extra Large (2x)
+               if (isGigantic) sizeClass = 'h-28 md:h-32'; // Gigantic (4x)
+               else if (isHuge) sizeClass = 'h-20 md:h-24'; // Huge (3x)
+               else if (isVeryLarge) sizeClass = 'h-16 md:h-20'; // Very Large (2.5x)
+               else if (isExtraLarge) sizeClass = 'h-14 md:h-16'; // Extra Large (2x)
                else if (isLarge) sizeClass = 'h-10 md:h-12'; // Large (1.5x)
                else if (isMedium) sizeClass = 'h-6 md:h-7'; // Medium (0.8x approx 26px)
                else if (isMediumSmall) sizeClass = 'h-4 md:h-5'; // Medium Small (0.6x)
