@@ -18,6 +18,7 @@ export const SERVICES: Service[] = [
     id: 'market-access',
     title: 'Market Access Consulting',
     description: "Expert consulting for effective and efficient market entry of healthcare technologies.",
+    longDescription: "Navigating the complex reimbursement landscape in Korea requires a strategic approach grounded in deep regulatory knowledge. Our Market Access Consulting service provides end-to-end support, from early-stage feasibility checks to final pricing negotiations. We develop compelling value stories that align with payer priorities, ensuring your innovation is recognized and rewarded. Whether for new drug listings or expanding coverage indications, we provide the strategic insight needed to overcome barriers to entry.",
     iconName: 'Globe',
     features: [
       "Value Identification and Value Story Development",
@@ -33,6 +34,7 @@ export const SERVICES: Service[] = [
     id: 'heor',
     title: 'HEOR',
     description: "Scientific, systematic, and comprehensive value assessment of efficacy, safety, and cost-effectiveness.",
+    longDescription: "In an era of value-based healthcare, robust economic evidence is essential. NDNEX specializes in rigorous Health Economics and Outcomes Research (HEOR) that meets the high standards of HIRA and global HTA bodies. We employ advanced methodologies, including Matching-adjusted Indirect Comparisons (MAIC) and Network Meta-Analyses (NMA), to synthesize evidence even when head-to-head trials are unavailable. Our economic models (CEA, BIM) are built to be transparent, adaptable, and persuasive, demonstrating the clear cost-effectiveness of your technology.",
     iconName: 'BarChart',
     features: [
       "Matching-adjusted Indirect Comparison (MAIC) & Network Meta-Analysis (NMA)",
@@ -47,6 +49,7 @@ export const SERVICES: Service[] = [
     id: 'rwe',
     title: 'Real World Evidence (RWE)',
     description: "Generating real-world data evidence for regulatory and reimbursement decision-making.",
+    longDescription: "Clinical trials often do not capture the full picture of a treatment's performance in routine practice. Our Real World Evidence (RWE) services bridge this gap by leveraging retrospective data to generate evidence that supports regulatory approvals, reimbursement decisions, and post-market safety monitoring. We design and execute high-quality chart review studies and database analyses that reflect the actual patient journey and treatment patterns in Korea, providing the 'real-world' proof payers demand.",
     iconName: 'Database',
     features: [
       "Epidemiology & Retrospective Database Studies",
@@ -60,6 +63,7 @@ export const SERVICES: Service[] = [
     id: 'big-data',
     title: 'Big Data Analytics',
     description: "Market analysis big data platform providing representative results using national health insurance claims data.",
+    longDescription: "Speed and representativeness are critical in a rapidly changing market. Our proprietary Big Data Analytics platform utilizes vast datasets from the National Health Insurance Service (NHIS) and Health Insurance Review & Assessment Service (HIRA). We provide rapid, representative insights into disease prevalence, patient demographics, and healthcare resource utilization. This data-driven approach allows clients to anticipate market shifts and tailor their strategies with precision based on the entire Korean population.",
     iconName: 'Server',
     features: [
       "Rapid analysis turnaround",
@@ -239,7 +243,7 @@ const getLogo = (domain: string) => `https://logo.clearbit.com/${domain}`;
 export const CLIENTS: Client[] = [
   { 
     name: "Ahn-Gook", 
-    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 100'%3E%3Cg transform='translate(10,10) scale(0.8)'%3E%3Cpath d='M20,70 Q10,40 40,20 Q70,10 90,30 Q100,50 80,80 Q50,90 20,70 Z' fill='%23E60012' /%3E%3Cpath d='M20,70 L45,45 M25,75 L50,50 M30,80 L55,55 M35,85 L60,60 M40,90 L65,65 M45,95 L70,70 M50,100 L75,75 M55,105 L80,80 M60,110 L85,85' stroke='white' stroke-width='3' /%3E%3C/g%3E%3Ctext x='90' y='60' font-family='sans-serif' font-weight='bold' font-size='40' fill='%23333'%3E안국약품(주)%3C/text%3E%3C/svg%3E",
+    logo: "https://www.awonder.co.kr/shopimages/ahngookthc/all_og__20250611165401phpFY489X.jpg",
     link: "https://www.ahn-gook.com/" 
   },
   { name: "Amgen", logo: "https://logos-world.net/wp-content/uploads/2023/06/Amgen-Logo.jpg", link: "https://www.amgen.co.kr/" },
@@ -252,7 +256,7 @@ export const CLIENTS: Client[] = [
   }, 
   { 
     name: "Binex", 
-    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Cpath d='M10 10h180l-20 40H10z' fill='%23DA291C'/%3E%3Ctext x='95' y='43' font-family='Arial, sans-serif' font-weight='bold' font-size='38' fill='white' text-anchor='middle'%3EBINEX%3C/text%3E%3C/svg%3E", 
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKUe7AGF4_5o92a1W5wNK98oZze9Q9xyVFQ&s", 
     link: "http://www.bi-nex.com/" 
   },
   { 
@@ -285,7 +289,7 @@ export const CLIENTS: Client[] = [
   { name: "Guerbet", logo: getLogo("guerbet.com"), link: "https://www.guerbet.com/ko-kr/" },
   { 
     name: "Hana", 
-    logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M50 20v160M50 90q60-20 60 90' stroke='%23009FE3' stroke-width='25' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='130' cy='40' r='15' fill='%23F58220'/%3E%3Ctext x='30' y='180' font-family='Arial, sans-serif' font-weight='bold' font-size='24' fill='%2358595B'%3EHanaPharm%3C/text%3E%3C/svg%3E", 
+    logo: "https://cdn.pharmnews.com/news/photo/200807/img_38694_6537_36618.jpg", 
     link: "http://www.hanaph.co.kr/index.do" 
   },
   { name: "Handok", logo: getLogo("handok.co.kr"), link: "https://www.handok.co.kr/" },
