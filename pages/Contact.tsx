@@ -31,7 +31,7 @@ export const Contact: React.FC = () => {
     // -------------------------------------------------------------------------
     const SERVICE_ID = 'service_ckej25f';      // EmailJS Dashboard > Email Services (e.g., service_x9d23k)
     const TEMPLATE_ID = 'template_pu3cok9';    // Updated as requested
-    const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';      // EmailJS Dashboard > Account > API Keys (e.g., user_8sd7f...)
+    const PUBLIC_KEY = '10ord5INPSdewRUps';      // EmailJS Dashboard > Account > API Keys (e.g., user_8sd7f...)
 
     try {
       await emailjs.send(
