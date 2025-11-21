@@ -124,53 +124,51 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Clients Grid - Professional Logo Wall Style */}
-      <section className="py-24 bg-white border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+      {/* Clients Grid - TEXT ONLY VERSION */}
+      <section className="py-24 bg-ndnex-dark relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+             <svg className="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+               <path d="M0 100 L100 0 L100 100 Z" fill="white" />
+             </svg>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
              <div>
-                <h2 className="text-3xl font-bold text-ndnex-dark font-display">Our Clients</h2>
-                <p className="text-gray-500 mt-2">Trusted by over 60 industry leaders in biopharma and medtech.</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-white font-display mb-2">Our Clients</h2>
+                <p className="text-gray-300 text-lg font-light">Trusted by over 60 industry leaders in biopharma and medtech.</p>
              </div>
-             <Link to="/experience" className="text-sm font-bold text-ndnex-orange flex items-center gap-1 hover:text-orange-700">
-               View Success Stories <ChevronRight size={16} />
+             <Link to="/experience" className="px-6 py-3 rounded-full border border-white/30 text-white hover:bg-white hover:text-ndnex-dark transition-all font-bold text-sm flex items-center gap-2 group">
+               View Success Stories <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
              </Link>
            </div>
            
+           {/* Text Card Grid */}
            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-             {CLIENTS.map((client, idx) => (
-               <div key={idx} className="bg-white border border-gray-100 rounded-lg h-20 flex items-center justify-center hover:border-ndnex-orange hover:shadow-md transition-all duration-300 group px-4">
-                 <span className="text-sm font-display font-bold text-gray-500 group-hover:text-ndnex-dark transition-colors text-center">
-                   {client}
-                 </span>
-               </div>
-             ))}
+             {CLIENTS.map((client, idx) => {
+               return (
+                 <div key={idx} className="bg-white h-20 rounded-lg flex items-center justify-center px-4 hover:bg-blue-50 hover:scale-[1.02] transition-all duration-300 shadow-lg cursor-default group">
+                   <span className="text-sm md:text-base font-display font-bold text-ndnex-dark group-hover:text-ndnex-blue transition-colors text-center leading-tight">
+                     {client.name}
+                   </span>
+                 </div>
+               );
+             })}
            </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-ndnex-dark relative overflow-hidden">
-        <div className="absolute inset-0">
-           <img 
-             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" 
-             alt="Corporate Building" 
-             className="w-full h-full object-cover opacity-10"
-           />
-        </div>
-        <div className="absolute top-0 right-0 opacity-10">
-           <svg width="400" height="400" viewBox="0 0 400 400" fill="none">
-              <circle cx="200" cy="200" r="180" stroke="white" strokeWidth="40" strokeDasharray="20 20" />
-           </svg>
-        </div>
+      <section className="py-24 bg-white relative overflow-hidden border-t border-gray-100">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
            <div className="max-w-2xl">
-             <h2 className="text-3xl md:text-4xl font-bold text-white font-display mb-4">Ready to demonstrate value?</h2>
-             <p className="text-lg text-gray-400 font-light">
+             <h2 className="text-3xl md:text-4xl font-bold text-ndnex-dark font-display mb-4">Ready to demonstrate value?</h2>
+             <p className="text-lg text-gray-500 font-light">
                Contact our team of experts to discuss your specific Market Access and HEOR needs.
              </p>
            </div>
-           <Link to="/contact" className="whitespace-nowrap bg-ndnex-orange text-white px-8 py-4 rounded-lg font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-900/20">
+           <Link to="/contact" className="whitespace-nowrap bg-ndnex-orange text-white px-10 py-5 rounded-xl font-bold hover:bg-orange-600 transition-all shadow-xl shadow-orange-500/20 hover:-translate-y-1 text-lg">
              Start a Conversation
            </Link>
         </div>
