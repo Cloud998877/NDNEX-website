@@ -18,7 +18,7 @@ export const About: React.FC = () => {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="max-w-3xl animate-fade-in-up">
-             <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 font-display tracking-tight leading-tight">
+             <h1 className="text-4xl md:text-6xl font-bold text-white mb-8 font-display tracking-tight leading-tight">
                Evidence & <br/>
                <span className="text-ndnex-orange">Next Solutions</span>
              </h1>
