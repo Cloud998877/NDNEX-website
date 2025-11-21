@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -21,9 +21,18 @@ export default {
         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
         display: ['"Century Gothic"', 'CenturyGothic', 'AppleGothic', 'sans-serif'],
       },
+      backgroundImage: {
+        'grid-pattern': "linear-gradient(to right, #f1f5f9 1px, transparent 1px), linear-gradient(to bottom, #f1f5f9 1px, transparent 1px)",
+        'dot-pattern': "radial-gradient(#cbd5e1 1px, transparent 1px)",
+      },
+      backgroundSize: {
+        'grid-40': '40px 40px',
+        'dot-20': '20px 20px',
+      },
       animation: {
         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
         'fade-in': 'fadeIn 0.5s ease-out forwards',
+        'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
         fadeInUp: {
@@ -33,6 +42,10 @@ export default {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
         }
       }
     },
