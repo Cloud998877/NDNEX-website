@@ -9,7 +9,7 @@ export const COMPANY_INFO = {
   phone: "02-568-1555",
   email: "info@ndnex.com",
   contactPersonEmail: "hyemin.ku@ndnex.com",
-  mission: "Increasing Patient Access to Treatment. We aim to expand healthcare coverage and ultimately increase patient access to treatment.",
+  mission: "Enhancing Patient Access to Treatment. We aim to expand healthcare coverage and ultimately increase patient access to treatment.",
   vision: "Customized Integrated Solutions. We provide tailored solutions that respond to changes in the healthcare paradigm with reliable evidence generation."
 };
 
