@@ -329,7 +329,7 @@ export const CLIENTS: Client[] = [
     link: "http://myunginph.co.kr/main/ko/index.html" 
   },
   { name: "Myungmoon", logo: getLogo("mmpharm.co.kr"), link: "http://www.mmpharm.co.kr/" },
-  { name: "Novartis", logo: getLogo("novartis.com"), link: "https://www.novartis.co.kr/" },
+  { name: "Novartis", logo: "https://logos-world.net/wp-content/uploads/2023/02/Novartis-Emblem.png", link: "https://www.novartis.co.kr/" },
   { name: "Novo Nordisk", logo: getLogo("novonordisk.com"), link: "https://www.novonordisk.co.kr/" },
   { name: "Ono", logo: getLogo("ono-pharma.com"), link: "https://kr.ono-pharma.com/" },
   { 
