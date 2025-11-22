@@ -316,7 +316,7 @@ export const CLIENTS: Client[] = [
     logo: "https://logo-resources.thevc.kr/organizations/200x200/153903dd1c2daac632e660e27ad7061f3c9516a6cbcd3cb174f5a5530cdf15ee_1674195948833225.jpg", 
     link: "http://www.litepharm.com/" 
   },
-  { name: "Merck", logo: getLogo("merckgroup.com"), link: "https://www.merckgroup.com/kr-ko" }, 
+  { name: "Merck", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLOffT9OU0YkN_J_HK_HnW3Dfwajxjb6gpQ&s", link: "https://www.merckgroup.com/kr-ko" }, 
   { 
     name: "Mitsubishi Tanabe", 
     logo: "https://lh4.googleusercontent.com/proxy/ApyTbjXCwmDyUkIxf35xp664fejbNw8B3vUF4Cs_umk_XXjqj5m5ItdYto2g_82CFSdRap-GYXfo6K2zOzhUnab3eA", 
