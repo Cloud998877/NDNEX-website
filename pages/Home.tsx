@@ -21,7 +21,8 @@ export const Home: React.FC = () => {
     "Hyundai",
     "Myungin",
     "PharmaEssentia",
-    "Roche"
+    "Roche", 
+    "Bristol Myers Squibb"
   ];
 
   // List of clients that need extra large logo display (approx 2x)
