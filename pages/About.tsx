@@ -82,7 +82,7 @@ export const About: React.FC = () => {
                  </div>
                  
                  <h3 className="text-2xl font-bold text-ndnex-orange mb-4 font-display tracking-wide">MISSION</h3>
-                 <h4 className="text-xl font-semibold text-gray-200 mb-4">Increasing Patient Access</h4>
+                 <h4 className="text-xl font-semibold text-gray-200 mb-4">Enhancing Patient Access</h4>
                  <p className="text-gray-400 leading-relaxed text-lg">
                    Ultimately, we aim to expand healthcare coverage and significantly increase the accessibility of critical treatments for patients who need them.
                  </p>
