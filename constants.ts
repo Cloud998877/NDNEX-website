@@ -355,7 +355,7 @@ export const CLIENTS: Client[] = [
   { name: "Samjin", logo: getLogo("samjinpharm.co.kr"), link: "https://www.samjinpharm.co.kr/" },
   { name: "Santen", logo: getLogo("santen.com"), link: "http://www.santen.co.kr/" },
   { name: "Sanofi", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREkYt06KUwfHbZcZE9vQ3wVa9bBqWB44WmPA&s", link: "https://www.sanofi.co.kr/" },
-  { name: "Servier", logo: getLogo("servier.com"), link: "https://www.servier.co.kr/" },
+  { name: "Servier", logo: "https://seekvectorlogo.net/wp-content/uploads/2023/04/servier-vector-logo-2023.png", link: "https://www.servier.co.kr/" },
   { name: "Shin Poong", logo: getLogo("shinpoong.co.kr"), link: "https://shinpoong.co.kr/" },
   { name: "Taejoon", logo: getLogo("taejoon.co.kr"), link: "https://www.taejoon.co.kr/" },
   { name: "Takeda", logo: getLogo("takeda.com"), link: "https://www.takeda.com/ko-kr" },
