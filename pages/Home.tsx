@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, TrendingUp, Award, Users, Globe, ChevronRight
 import { CLIENTS } from '../constants';
 
 export const Home: React.FC = () => {
-  // List of clients that need gigantic logo display (approx 4x)
+  // List of clients that need gigantic logo display (approx 5x)
   const GIGANTIC_LOGOS = [
     "Daewoo"
   ];
