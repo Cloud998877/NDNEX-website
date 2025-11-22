@@ -342,7 +342,7 @@ export const CLIENTS: Client[] = [
     logo: "https://www.otsuka.co.kr/img/user/company/ci_intro.png", 
     link: "http://www.otsuka.co.kr/" 
   },
-  { name: "Pfizer", logo: getLogo("pfizer.com"), link: "https://www.pfizer.co.kr/" },
+  { name: "Pfizer", logo: "https://1000logos.net/wp-content/uploads/2021/08/Pfizer-logo.jpg", link: "https://www.pfizer.co.kr/" },
   { name: "PharmaEssentia", logo: getLogo("pharmaessentia.com"), link: "https://kr.pharmaessentia.com/modules/catalogue_history2/cg_index.html" },
   { name: "PPD", logo: getLogo("ppd.com"), link: "https://www.ppd.com/" },
   { name: "Roche", logo: getLogo("roche.com"), link: "https://www.roche.co.kr/" },
