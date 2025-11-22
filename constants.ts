@@ -248,7 +248,7 @@ export const CLIENTS: Client[] = [
   },
   { name: "Amgen", logo: "https://logos-world.net/wp-content/uploads/2023/06/Amgen-Logo.jpg", link: "https://www.amgen.co.kr/" },
   { name: "Astellas", logo: getLogo("astellas.com"), link: "https://www.astellas.com/kr/" },
-  { name: "AstraZeneca", logo: getLogo("astrazeneca.com"), link: "https://www.astrazeneca.co.kr/" },
+  { name: "AstraZeneca", logo: "https://1000logos.net/wp-content/uploads/2023/10/AstraZeneca-Logo.png", link: "https://www.astrazeneca.co.kr/" },
   { 
     name: "BeOne", 
     logo: "https://cdn.cookielaw.org/logos/51fa3978-59cb-4e5a-8700-81a96d2641f1/01959608-9da4-7326-803e-18390b0b228b/e8c3961c-efcf-4274-bdc6-c0749adc1e27/Beone.png", 
