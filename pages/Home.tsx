@@ -42,7 +42,7 @@ export const Home: React.FC = () => {
     "Samjin",
     "Santen",
     "Taejoon", 
-      "Sanofi", "Novartis"
+      "Sanofi", "Novartis", "Astrazeneca"
   ];
 
   // List of clients that need medium logo display (approx 0.8x)
