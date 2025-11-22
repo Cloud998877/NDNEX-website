@@ -29,7 +29,8 @@ export const Home: React.FC = () => {
   const EXTRA_LARGE_LOGOS = [
     
     "LitePharmTech",
-    "Ipsen"
+    "Ipsen",
+    "Novo Nordisk"
   ];
 
   // List of clients that need larger logo display (approx 1.5x)
