@@ -17,6 +17,7 @@ export const Home: React.FC = () => {
 
   // List of clients that need very large logo display (approx 2.5x)
   const VERY_LARGE_LOGOS = [
+    "Ahn-Gook",
     "Hyundai",
     "Myungin",
     "PharmaEssentia",
@@ -25,7 +26,7 @@ export const Home: React.FC = () => {
 
   // List of clients that need extra large logo display (approx 2x)
   const EXTRA_LARGE_LOGOS = [
-    "Ahn-Gook",
+    
     "LitePharmTech",
     "Ipsen"
   ];
