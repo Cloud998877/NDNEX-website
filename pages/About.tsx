@@ -10,7 +10,7 @@ export const About: React.FC = () => {
       <div className="relative py-32 md:py-44 bg-ndnex-dark overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2069" 
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" 
             alt="Modern Office Interior" 
             className="w-full h-full object-cover opacity-30"
           />
