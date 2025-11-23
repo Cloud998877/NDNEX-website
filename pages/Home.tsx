@@ -78,6 +78,14 @@ export const Home: React.FC = () => {
             alt="Healthcare Data Evidence and Value" 
             className="w-full h-full object-cover"
           />
+
+          
+{/* Updated Image: HEOR Focus - Data Analysis & Economics (Charts/Graphs) */} 
+          <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Health Economics and Data Analysis" className="w-full h-full object-cover" />
+
+
+          
           {/* Advanced Overlay for Depth */}
           <div className="absolute inset-0 bg-ndnex-dark/90 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-ndnex-dark/80 via-transparent to-slate-50"></div>
