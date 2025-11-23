@@ -72,18 +72,12 @@ export const Home: React.FC = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          {/* Updated Image: Abstract Data / Evidence / Structure (No neurons) */}
+          {/* Updated Image: Abstract Data / Evidence / Structure  */}
           <img 
             src="https://images.unsplash.com/photo-1558494949-ef5209529422?auto=format&fit=crop&q=80&w=2013" 
             alt="Healthcare Data Evidence and Value" 
             className="w-full h-full object-cover"
           />
-
-          
-{/* Updated Image: HEOR Focus - Data Analysis & Economics (Charts/Graphs) */} 
-          <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-            alt="Health Economics and Data Analysis" className="w-full h-full object-cover" />
-
 
           
           {/* Advanced Overlay for Depth */}
