@@ -110,7 +110,7 @@ export const About: React.FC = () => {
                   <div className="p-6 bg-slate-50 rounded-xl border border-gray-100">
                     <Quote className="text-ndnex-orange mb-4 opacity-50" size={32} />
                     <p className="text-gray-700 italic font-medium">
-                      "Our goal is to build the bridge between medical innovation and the patients who need it most."
+                      "We are building a living bridge between medical innovation and the patients who need it — transforming evidence into real-world access and impact."
                     </p>
                   </div>
                </div>
