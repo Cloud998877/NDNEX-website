@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
   // Logo Component for Footer (Image Version)
   const FooterLogo = ({ className }: { className?: string }) => (
     <img 
-      src="https://media.licdn.com/dms/image/v2/C4E0BAQGqFQpOCs4nMw/company-logo_200_200/company-logo_200_200/0/1631306479601?e=2147483647&v=beta&t=IcnDefzwZ0baFvj5ixNafcyvWSADV9yxK3jPx5OJP2s"
+      src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170711_154%2F14997399705755qbhS_PNG%2F186661515629818_0.png&type=sc960_832"
       alt="NDNEX Logo"
       className={`${className} rounded-md`}
     />
