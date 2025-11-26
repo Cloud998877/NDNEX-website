@@ -44,7 +44,7 @@ export const Navbar: React.FC = () => {
           {/* Logo area */}
           <Link to="/" className="flex items-center gap-3 group">
              {/* Increased logo size */}
-             <NdnexLogo className="h-16 md:h-20 w-auto" />
+             <NdnexLogo className="h-18 md:h-22 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
