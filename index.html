@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ko">
+
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,41 +14,101 @@
     <meta name="keywords" content="엔디넥스, NDNEX, 의약품 경제성 평가, Pharmacoeconomics, PE, 비용효과성 분석, Cost-effectiveness analysis in Korea, 구혜민, Hyemin Ku, Market Access, HEOR, 약가 컨설팅, 보험 등재, HIRA, 심평원, 리얼월드데이터, RWE">
     <meta name="author" content="NDNEX">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ndnex.com/">
-    <meta property="og:title" content="NDNEX (엔디넥스) | 의약품 경제성 평가 & Market Access">
-    <meta property="og:description" content="구혜민 대표가 이끄는 의약품 경제성 평가 및 Market Access 전문 컨설팅. 과학적 근거를 바탕으로 성공적인 시장 진입을 지원합니다.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef5209529422?auto=format&fit=crop&q=80&w=1200">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.ndnex.com/">
-    <meta property="twitter:title" content="NDNEX (엔디넥스) | Hyemin Ku">
-    <meta property="twitter:description" content="Cost-effectiveness analysis in Korea, HEOR, and Market Access solutions by NDNEX.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1558494949-ef5209529422?auto=format&fit=crop&q=80&w=1200">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+ <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ndnex: {
+                orange: '#F08020',
+                'orange-light': '#FFF0E0',
+                dark: '#1A2B4A',
+                'dark-light': '#2A4069',
+                blue: '#2563EB',
+                light: '#F8FAFC',
+                gray: '#64748B'
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Primary UI font
+              display: ['"Century Gothic"', 'CenturyGothic', 'AppleGothic', 'sans-serif'], // Brand/Heading font
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+      
+      .glass-dark {
+        background: rgba(26, 43, 74, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
     "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
-    "@emailjs/browser": "https://aistudiocdn.com/@emailjs/browser@^4.4.1",
-    "vite": "https://aistudiocdn.com/vite@^7.2.4"
+    "@emailjs/browser": "https://aistudiocdn.com/@emailjs/browser@^4.4.1"
   }
 }
 </script>
+<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-50 text-slate-900 antialiased selection:bg-ndnex-orange selection:text-white font-sans">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>
