@@ -24,15 +24,13 @@ export const Navbar: React.FC = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  // Custom SVG Logo Component - Text Only, Century Gothic Bold, Uppercase, Flattened
+  // Custom Image Logo Component
   const NdnexLogo = ({ className }: { className?: string }) => (
-    <svg viewBox="0 0 220 54" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Main Wordmark: NDNEX - Uppercase, Century Gothic Bold, Flattened (Scaled) */}
-      <text x="0" y="42" transform="scale(1.15, 0.85)" fontFamily="'Century Gothic', CenturyGothic, AppleGothic, sans-serif" fontWeight="bold" fontSize="42" fill="#54585A" letterSpacing="-1">NDNEX</text>
-
-      {/* Tagline */}
-      <text x="2" y="50" fontFamily="'Century Gothic', CenturyGothic, AppleGothic, sans-serif" fontWeight="normal" fontSize="11" fill="#F08020" letterSpacing="0.2">Evidence and Next solutions</text>
-    </svg>
+    <img 
+      src="https://media.licdn.com/dms/image/v2/C4E0BAQGqFQpOCs4nMw/company-logo_200_200/company-logo_200_200/0/1631306479601?e=2147483647&v=beta&t=IcnDefzwZ0baFvj5ixNafcyvWSADV9yxK3jPx5OJP2s"
+      alt="NDNEX Logo"
+      className={`${className} rounded-md`}
+    />
   );
 
   return (
