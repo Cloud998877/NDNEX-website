@@ -34,16 +34,17 @@ export const Navbar: React.FC = () => {
   );
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-500 ${
+<nav className={`fixed w-full z-50 transition-all duration-500 ${
       scrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-sm py-2' 
-        : 'bg-white/80 backdrop-blur-sm py-4'
+        ? 'bg-white shadow-md py-2' 
+        : 'bg-white py-4'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo area */}
           <Link to="/" className="flex items-center gap-3 group">
-             <NdnexLogo className="h-12 w-auto" />
+             {/* Increased logo size */}
+             <NdnexLogo className="h-16 md:h-20 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
