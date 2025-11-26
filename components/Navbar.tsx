@@ -43,8 +43,7 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo area */}
           <Link to="/" className="flex items-center gap-3 group">
-         {/* Adjusted logo size for mobile: h-10 (40px) -> h-12 (48px) on small, h-20 on desktop */}
-             <NdnexLogo className="h-10 sm:h-12 md:h-20 w-auto" />
+             <NdnexLogo className="h-16 sm:h-12 md:h-20 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
