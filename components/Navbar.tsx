@@ -27,7 +27,7 @@ export const Navbar: React.FC = () => {
   // Custom Image Logo Component
   const NdnexLogo = ({ className }: { className?: string }) => (
     <img 
-      src="https://postfiles.pstatic.net/MjAyNTExMjZfMTUz/MDAxNzY0MTUyNzE4ODc0.tN_9KMTMDbY6zKr7nOcYgsjing7i16VmN6qapQv1Hucg.pyE3cIovCIO2ODSAfky-Bc6pHH21uFOo-luNUcXKB-Yg.PNG/logo-removebg-preview.png?type=w773"
+      src=https://postfiles.pstatic.net/MjAyNTExMjZfMTUz/MDAxNzY0MTUyNzE4ODc0.tN_9KMTMDbY6zKr7nOcYgsjing7i16VmN6qapQv1Hucg.pyE3cIovCIO2ODSAfky-Bc6pHH21uFOo-luNUcXKB-Yg.PNG/logo-removebg-preview.png?type=w773"
       alt="NDNEX Logo"
       className={`${className} rounded-md`}
     />
