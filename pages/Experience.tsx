@@ -118,7 +118,7 @@ export const Experience: React.FC = () => {
                  Contact Us <ChevronRight size={20} />
                </a>
              </div>
-
+</div>
 
 
 
