@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BookOpen, Activity, ArrowUpRight, Heart, Brain, Eye, Dna, Stethoscope, Pill, Thermometer, Droplet, Zap } from 'lucide-react';
+import { BookOpen, Activity, ArrowUpRight, Heart, Brain, Eye, Dna, Stethoscope, Pill, Thermometer, Droplet, Zap, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export const Experience: React.FC = () => {
@@ -122,6 +122,20 @@ export const Experience: React.FC = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Bottom CTA - Properly placed outside the loop */}
+        <div className="mt-24 bg-ndnex-dark rounded-3xl p-12 text-center relative overflow-hidden shadow-2xl animate-fade-in-up">
+           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+           <div className="relative z-10">
+             <h3 className="text-2xl md:text-3xl font-bold text-white font-display mb-4">Ready to start your project?</h3>
+             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+               Explore our services or get in touch with our research team for a consultation.
+             </p>
+             <a href="#/contact" className="inline-flex items-center gap-2 bg-ndnex-orange text-white px-8 py-4 rounded-full font-bold hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-900/20">
+               Contact Us <ChevronRight size={20} />
+             </a>
+           </div>
         </div>
 
       </div>
