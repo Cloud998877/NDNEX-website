@@ -62,7 +62,8 @@
                     {pub.authors}
                   </p>
                </div>
-    
+
+         
                {pub.link && (
                  <div className="shrink-0 self-start md:self-center">
                    <a 
