@@ -247,9 +247,13 @@ export const CLIENTS: Client[] = [
     logo: "/logos/Ahn-Gook.JPG",
     link: "https://www.ahn-gook.com/" 
   },
+
+
   { name: "Amgen", logo: "https://logos-world.net/wp-content/uploads/2023/06/Amgen-Logo.jpg", link: "https://www.amgen.co.kr/" },
-  { name: "Astellas", logo: getLogo("astellas.com"), link: "https://www.astellas.com/kr/" },
+  { name: "Astellas", logo: getLogo("https://www.astellas.com/en"), link: "https://www.astellas.com/kr/" },
   { name: "AstraZeneca", logo: "https://1000logos.net/wp-content/uploads/2023/10/AstraZeneca-Logo.png", link: "https://www.astrazeneca.co.kr/" },
+
+
   { 
     name: "BeOne", 
     logo: "https://cdn.cookielaw.org/logos/51fa3978-59cb-4e5a-8700-81a96d2641f1/01959608-9da4-7326-803e-18390b0b228b/e8c3961c-efcf-4274-bdc6-c0749adc1e27/Beone.png", 
@@ -265,9 +269,9 @@ export const CLIENTS: Client[] = [
     logo: "https://kr.biogen.com/content/dam/corporate/international/global/en-US/global/OG-images/og_biogen_logo.jpg", 
     link: "https://www.biogen.com/home.html" 
   },
-  { name: "Boehringer Ingelheim", logo: getLogo("boehringer-ingelheim.com"), link: "https://www.bikr.co.kr/" },
+  { name: "Boehringer Ingelheim", logo: getLogo("https://www.boehringer-ingelheim.com/"), link: "https://www.bikr.co.kr/" },
   { name: "Bristol Myers Squibb", logo: "https://www.bms.com/media/media-library/corporate-resources/bms-logo/_jcr_content/par/subject_copy_copy_co_969178463.respimg.jpg/1731506928883/bms-logo-rgb-pos-with-border.jpg", link: "https://www.bms.com/kr" },
-  { name: "Chong Kun Dang", logo: getLogo("ckdpharm.com"), link: "http://www.ckdpharm.com/" },
+  { name: "Chong Kun Dang", logo: getLogo("https://ckdpharm.com/"), link: "http://www.ckdpharm.com/" },
   { 
     name: "CSL Behring", 
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMY3huhMI5wFlSO_IDyh3c5atkxl7cb9CVng&s", 
