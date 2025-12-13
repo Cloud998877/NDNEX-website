@@ -250,7 +250,7 @@ export const CLIENTS: Client[] = [
 
 
   { name: "Amgen", logo: "https://logos-world.net/wp-content/uploads/2023/06/Amgen-Logo.jpg", link: "https://www.amgen.co.kr/" },
-  { name: "Astellas", logo: getLogo("https://www.astellas.com/en"), link: "https://www.astellas.com/kr/" },
+  { name: "Astellas", logo: "/logos/astellas.JPG", link: "https://www.astellas.com/kr/" },
   { name: "AstraZeneca", logo: "https://1000logos.net/wp-content/uploads/2023/10/AstraZeneca-Logo.png", link: "https://www.astrazeneca.co.kr/" },
 
 
