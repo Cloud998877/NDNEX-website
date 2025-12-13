@@ -274,7 +274,7 @@ export const CLIENTS: Client[] = [
   { name: "Chong Kun Dang", logo: getLogo("https://ckdpharm.com/"), link: "http://www.ckdpharm.com/" },
   { 
     name: "CSL Behring", 
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMY3huhMI5wFlSO_IDyh3c5atkxl7cb9CVng&s", 
+    logo: "/logos/CSL behring.JPG", 
     link: "https://www.cslbehring.co.kr/" 
   },
   { 
