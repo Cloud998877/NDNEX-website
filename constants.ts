@@ -322,7 +322,7 @@ export const CLIENTS: Client[] = [
     logo: "/logos/mitsubishitanabe.JPG", 
     link: "http://www.mt-pharma-korea.com/" 
   },
-  { name: "MSD", "/logos/MSD.JPG", link: "https://www.msd-korea.com/" },
+  { name: "MSD", logo:"/logos/MSD.JPG", link: "https://www.msd-korea.com/" },
   { 
     name: "Myungin", 
     logo: "/logos/Myungin.JPG", 
