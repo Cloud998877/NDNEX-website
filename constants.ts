@@ -243,34 +243,29 @@ const getLogo = (domain: string) => `https://logo.clearbit.com/${domain}`;
 
 export const CLIENTS: Client[] = [
   { 
-    name: "Ahn-Gook", 
-    logo: "/logos/Ahn-Gook.JPG",
-    link: "https://www.ahn-gook.com/" 
-  },
-
-
-  { name: "Amgen", logo: "https://logos-world.net/wp-content/uploads/2023/06/Amgen-Logo.jpg", link: "https://www.amgen.co.kr/" },
+    name: "Ahn-Gook", logo: "/logos/Ahn-Gook.JPG",link: "https://www.ahn-gook.com/" },
+  { name: "Amgen", logo: "/logos/amgen.JPG", link: "https://www.amgen.co.kr/" },
   { name: "Astellas", logo: "/logos/astellas.JPG", link: "https://www.astellas.com/kr/" },
-  { name: "AstraZeneca", logo: "https://1000logos.net/wp-content/uploads/2023/10/AstraZeneca-Logo.png", link: "https://www.astrazeneca.co.kr/" },
+  { name: "AstraZeneca", logo: "/logos/astrazeneca.JPG", link: "https://www.astrazeneca.co.kr/" },
 
 
   { 
     name: "BeOne", 
-    logo: "https://cdn.cookielaw.org/logos/51fa3978-59cb-4e5a-8700-81a96d2641f1/01959608-9da4-7326-803e-18390b0b228b/e8c3961c-efcf-4274-bdc6-c0749adc1e27/Beone.png", 
+    logo: "/logos/beone.JPG", 
     link: "https://beonemedicines.kr/" 
   }, 
   { 
     name: "Binex", 
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKUe7AGF4_5o92a1W5wNK98oZze9Q9xyVFQ&s", 
+    logo: "/logos/bines.JPG", 
     link: "http://www.bi-nex.com/" 
   },
   { 
     name: "Biogen", 
-    logo: "https://kr.biogen.com/content/dam/corporate/international/global/en-US/global/OG-images/og_biogen_logo.jpg", 
+    logo: "/logos/biogen.JPG", 
     link: "https://www.biogen.com/home.html" 
   },
   { name: "Boehringer Ingelheim", logo: "/logos/Boehringer ingelheim.JPG" , link: "https://www.bikr.co.kr/" },
-  { name: "Bristol Myers Squibb", logo: "https://www.bms.com/media/media-library/corporate-resources/bms-logo/_jcr_content/par/subject_copy_copy_co_969178463.respimg.jpg/1731506928883/bms-logo-rgb-pos-with-border.jpg", link: "https://www.bms.com/kr" },
+  { name: "Bristol Myers Squibb", logo: "/logos/BMS.JPG", link: "https://www.bms.com/kr" },
   { name: "Chong Kun Dang", logo: "/logos/Chong keundang.JPG" , link: "http://www.ckdpharm.com/" },
   { 
     name: "CSL Behring", 
@@ -282,102 +277,102 @@ export const CLIENTS: Client[] = [
     logo: "/logos/Daewoo.JPG", 
     link: "http://www.dwpharm.co.kr/" 
   },
-  { name: "Daewoong", logo: getLogo("daewoong.co.kr"), link: "https://www.daewoong.co.kr/" },
-  { name: "Daewon", logo: getLogo("daewonpharm.com"), link: "https://www.daewonpharm.com/" },
-  { name: "Daiichi-Sankyo", logo: getLogo("daiichisankyo.com"), link: "http://www.daiichisankyo.co.kr/" },
-  { name: "Dongkook", logo: getLogo("dkpharm.co.kr"), link: "https://www.dkpharm.co.kr/" },
+  { name: "Daewoong", logo: "/logos/daewoong.JPG", link: "https://www.daewoong.co.kr/" },
+  { name: "Daewon", logo: "/logos/daewon.JPG", link: "https://www.daewonpharm.com/" },
+  { name: "Daiichi-Sankyo", logo: "/logos/Daiichi sankyo.JPG", link: "http://www.daiichisankyo.co.kr/" },
+  { name: "Dongkook", logo: "/logos/dongkook.JPG", link: "https://www.dkpharm.co.kr/" },
   { 
     name: "GSK", 
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSh8MPJ3g3BQc9iv2V6AZ5kckB5LOA0L5D8Q&s", 
+    logo: "/logos/GSK.JPG", 
     link: "https://kr.gsk.com/" 
   },
-  { name: "Guerbet", logo: getLogo("guerbet.com"), link: "https://www.guerbet.com/ko-kr/" },
+  { name: "Guerbet", logo: "/logos/Guerbet.JPG", link: "https://www.guerbet.com/ko-kr/" },
   { 
     name: "Hana", 
-    logo: "https://cdn.pharmnews.com/news/photo/200807/img_38694_6537_36618.jpg", 
+    logo: "/logos/hana.JPG", 
     link: "http://www.hanaph.co.kr/index.do" 
   },
-  { name: "Handok", logo: getLogo("handok.co.kr"), link: "https://www.handok.co.kr/" },
-  { name: "Hanlim", logo: getLogo("hanlim.com"), link: "http://www.hanlim.com/" },
-  { name: "Huons", logo: getLogo("huons.com"), link: "http://www.huons.com/" },
-  { name: "Hyundai", logo: getLogo("hyundaipharm.co.kr"), link: "http://www.hyundaipharm.co.kr/" },
-  { name: "Ipsen", logo: getLogo("ipsen.com"), link: "https://www.ipsen.com/" },
-  { name: "Janssen", logo: getLogo("janssen.com"), link: "https://www.janssen.com/korea/" },
-  { name: "Jeil", logo: getLogo("jeilpharm.co.kr"), link: "https://www.jeilpharm.co.kr/" },
-  { name: "JW", logo: getLogo("jw-pharma.co.kr"), link: "https://www.jw-pharma.co.kr/" },
-  { name: "Kukje", logo: getLogo("kukjepharm.co.kr"), link: "http://www.kukjepharm.co.kr/" },
+  { name: "Handok", logo: "/logos/handok.JPG", link: "https://www.handok.co.kr/" },
+  { name: "Hanlim", logo: "/logos/Hanlim.JPG", link: "http://www.hanlim.com/" },
+  { name: "Huons", logo: "/logos/huons.JPG", link: "http://www.huons.com/" },
+  { name: "Hyundai", logo:"/logos/Hyundai.JPG", link: "http://www.hyundaipharm.co.kr/" },
+  { name: "Ipsen", logo: "/logos/ipsen.JPG", link: "https://www.ipsen.com/" },
+  { name: "Janssen", logo: "/logos/Janssen.JPG", link: "https://www.janssen.com/korea/" },
+  { name: "Jeil", logo: "/logos/jeil.JPG", link: "https://www.jeilpharm.co.kr/" },
+  { name: "JW", logo: "/logos/JW.JPG", link: "https://www.jw-pharma.co.kr/" },
+  { name: "Kukje", logo: "/logos/kukje.JPG", link: "http://www.kukjepharm.co.kr/" },
   { 
     name: "Kyowa Kirin", 
-    logo: "https://www.kyowakirin.com/media_center/news_releases/2019/images/e20190205_01.png", 
+    logo: "/logos/kyowa kirin.JPG", 
     link: "https://www.kyowakirin.com/kr/" 
   },
   { 
     name: "Lilly", 
-    logo: "https://images.seeklogo.com/logo-png/8/3/lilly-logo-png_seeklogo-84218.png", 
+    logo: "/logos/Lilly.JPG", 
     link: "https://www.lilly.co.kr/" 
   },
   { 
     name: "LitePharmTech", 
-    logo: "https://logo-resources.thevc.kr/organizations/200x200/153903dd1c2daac632e660e27ad7061f3c9516a6cbcd3cb174f5a5530cdf15ee_1674195948833225.jpg", 
+    logo: "/logos/LitePharmtech.JPG", 
     link: "http://www.litepharm.com/" 
   },
-  { name: "Merck", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLOffT9OU0YkN_J_HK_HnW3Dfwajxjb6gpQ&s", link: "https://www.merckgroup.com/kr-ko" }, 
+  { name: "Merck", logo: "/logos/merck.JPG", link: "https://www.merckgroup.com/kr-ko" }, 
   { 
     name: "Mitsubishi Tanabe", 
-    logo: "https://lh4.googleusercontent.com/proxy/ApyTbjXCwmDyUkIxf35xp664fejbNw8B3vUF4Cs_umk_XXjqj5m5ItdYto2g_82CFSdRap-GYXfo6K2zOzhUnab3eA", 
+    logo: "/logos/mitsubishi tanabe pharma.JPG", 
     link: "http://www.mt-pharma-korea.com/" 
   },
-  { name: "MSD", logo: getLogo("msd.com"), link: "https://www.msd-korea.com/" },
+  { name: "MSD", "/logos/MSD.JPG", link: "https://www.msd-korea.com/" },
   { 
     name: "Myungin", 
-    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsuU8v1hmqs_kqGeI56SHIGga-gnusVg88SA&s", 
+    logo: "/logos/Myungin.JPG", 
     link: "http://myunginph.co.kr/main/ko/index.html" 
   },
-  { name: "Myungmoon", logo: getLogo("mmpharm.co.kr"), link: "http://www.mmpharm.co.kr/" },
-  { name: "Novartis", logo: "https://logos-world.net/wp-content/uploads/2023/02/Novartis-Emblem.png", link: "https://www.novartis.co.kr/" },
-  { name: "Novo Nordisk", logo: getLogo("novonordisk.com"), link: "https://www.novonordisk.co.kr/" },
-  { name: "Ono", logo: getLogo("ono-pharma.com"), link: "https://kr.ono-pharma.com/" },
+  { name: "Myungmoon", logo: "/logos/Myungmoon.JPG", link: "http://www.mmpharm.co.kr/" },
+  { name: "Novartis", logo: "/logos/novartis.JPG", link: "https://www.novartis.co.kr/" },
+  { name: "Novo Nordisk", logo:"/logos/novo nordisk.JPG", link: "https://www.novonordisk.co.kr/" },
+  { name: "Ono", logo: "/logos/ono.JPG", link: "https://kr.ono-pharma.com/" },
   { 
     name: "Optus", 
-    logo: "https://cdn-pro-web-217-134.cdn-nhncommerce.com/optuspharm76_godomall_com/data/commonimg/ico_kr.png", 
+    logo: "/logos/optus.JPG", 
     link: "http://optuspharm.com/" 
   },
   { 
     name: "Otsuka", 
-    logo: "https://www.otsuka.co.kr/img/user/company/ci_intro.png", 
+    logo: "/logos/otsuka.JPG", 
     link: "http://www.otsuka.co.kr/" 
   },
-  { name: "Pfizer", logo: "https://1000logos.net/wp-content/uploads/2021/08/Pfizer-logo.jpg", link: "https://www.pfizer.co.kr/" },
-  { name: "PharmaEssentia", logo: getLogo("pharmaessentia.com"), link: "https://kr.pharmaessentia.com/modules/catalogue_history2/cg_index.html" },
-  { name: "PPD", logo: getLogo("ppd.com"), link: "https://www.ppd.com/" },
-  { name: "Roche", logo: getLogo("roche.com"), link: "https://www.roche.co.kr/" },
-  { name: "Samchundang", logo: getLogo("scd.co.kr"), link: "http://www.scd.co.kr/" },
+  { name: "Pfizer", logo: "/logos/pfizer.JPG", link: "https://www.pfizer.co.kr/" },
+  { name: "PharmaEssentia", logo: "/logos/pharmaessentia.JPG", link: "https://kr.pharmaessentia.com/modules/catalogue_history2/cg_index.html" },
+  { name: "PPD", logo: "/logos/PPD.JPG", link: "https://www.ppd.com/" },
+  { name: "Roche", logo: "/logos/roche.JPG", link: "https://www.roche.co.kr/" },
+  { name: "Samchundang", logo: "/logos/samchungdang.JPG", link: "http://www.scd.co.kr/" },
   { 
     name: "Samil", 
-    logo: "https://www.docdocdoc.co.kr/news/photo/201704/1041167_1102755_213.jpg", 
+    logo: "/logos/samil.JPG", 
     link: "http://www.samil-pharm.com/" 
   },
-  { name: "Samjin", logo: getLogo("samjinpharm.co.kr"), link: "https://www.samjinpharm.co.kr/" },
-  { name: "Santen", logo: getLogo("santen.com"), link: "http://www.santen.co.kr/" },
-  { name: "Sanofi", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREkYt06KUwfHbZcZE9vQ3wVa9bBqWB44WmPA&s", link: "https://www.sanofi.co.kr/" },
-  { name: "Servier", logo: "https://seekvectorlogo.net/wp-content/uploads/2023/04/servier-vector-logo-2023.png", link: "https://www.servier.co.kr/" },
-  { name: "Shin Poong", logo: getLogo("shinpoong.co.kr"), link: "https://shinpoong.co.kr/" },
-  { name: "Taejoon", logo: getLogo("taejoon.co.kr"), link: "https://www.taejoon.co.kr/" },
-  { name: "Takeda", logo: getLogo("takeda.com"), link: "https://www.takeda.com/ko-kr" },
-  { name: "UCB", logo: getLogo("ucb.com"), link: "https://www.ucbkorea.co.kr/" },
+  { name: "Samjin", logo: "/logos/samjin.JPG", link: "https://www.samjinpharm.co.kr/" },
+  { name: "Santen", logo: "/logos/santen.JPG", link: "http://www.santen.co.kr/" },
+  { name: "Sanofi", logo: "/logos/sanofi.JPG", link: "https://www.sanofi.co.kr/" },
+  { name: "Servier", logo: "/logos/servier.JPG", link: "https://www.servier.co.kr/" },
+  { name: "Shin Poong", logo: "/logos/Shinpoong.JPG", link: "https://shinpoong.co.kr/" },
+  { name: "Taejoon", logo: "/logos/taejoon.JPG", link: "https://www.taejoon.co.kr/" },
+  { name: "Takeda", logo: "/logos/takeda.JPG", link: "https://www.takeda.com/ko-kr" },
+  { name: "UCB", logo: "/logos/ucb.JPG", link: "https://www.ucbkorea.co.kr/" },
   { 
     name: "WhanIn", 
-    logo: "https://file.alphasquare.co.kr/media/images/stock_logo/kr/016580.png", 
+    logo: "/logos/whanin.JPG", 
     link: "https://www.whanin.com/" 
   },
   { 
     name: "Yooyoung", 
-    logo: "https://www.khanews.com/news/photo/201010/20992_3891.jpg", 
+    logo: "/logos/yooyoung.JPG", 
     link: "https://www.yypharm.co.kr/" 
   },
   { 
     name: "Youngjin", 
-    logo: "https://i.namu.wiki/i/zwOhRUjCJYlBSDnzdjys5RV2DisTcDHT96Lc6pgt38D_Qn9Aa9j2-7JI5iEC4kI2IP9Uz8ZHUjcsD5NPJJLO4g.svg", 
+    logo: "/logos/youngjin.JPG", 
     link: "https://www.yungjin.co.kr/" 
   }
 ].sort((a, b) => a.name.localeCompare(b.name));
