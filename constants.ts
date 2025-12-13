@@ -269,9 +269,9 @@ export const CLIENTS: Client[] = [
     logo: "https://kr.biogen.com/content/dam/corporate/international/global/en-US/global/OG-images/og_biogen_logo.jpg", 
     link: "https://www.biogen.com/home.html" 
   },
-  { name: "Boehringer Ingelheim", logo: getLogo("https://www.boehringer-ingelheim.com/"), link: "https://www.bikr.co.kr/" },
+  { name: "Boehringer Ingelheim", logo: "/logos/Boehringer ingelheim.JPG" , link: "https://www.bikr.co.kr/" },
   { name: "Bristol Myers Squibb", logo: "https://www.bms.com/media/media-library/corporate-resources/bms-logo/_jcr_content/par/subject_copy_copy_co_969178463.respimg.jpg/1731506928883/bms-logo-rgb-pos-with-border.jpg", link: "https://www.bms.com/kr" },
-  { name: "Chong Kun Dang", logo: getLogo("https://ckdpharm.com/"), link: "http://www.ckdpharm.com/" },
+  { name: "Chong Kun Dang", logo: "/logos/Chong keundang.JPG" , link: "http://www.ckdpharm.com/" },
   { 
     name: "CSL Behring", 
     logo: "/logos/CSL behring.JPG", 
@@ -279,7 +279,7 @@ export const CLIENTS: Client[] = [
   },
   { 
     name: "Daewoo", 
-    logo: "https://i.ytimg.com/vi/an1DMelQsAk/maxresdefault.jpg", 
+    logo: "/logos/Daewoo.JPG", 
     link: "http://www.dwpharm.co.kr/" 
   },
   { name: "Daewoong", logo: getLogo("daewoong.co.kr"), link: "https://www.daewoong.co.kr/" },
