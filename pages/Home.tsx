@@ -48,12 +48,12 @@ export const Home: React.FC = () => {
         loading="lazy"
         onError={() => setFailed(true)}
         className="
-          max-h-5 md:max-h-6
-          max-w-[80px] md:max-w-[96px]
+          max-h-7 md:max-h-7
+          max-w-[100px] md:max-w-[120px]
           w-auto h-auto
           object-contain
           transition-transform duration-300
-          group-hover:scale-[1.05]
+          group-hover:scale-[1.08]
         "
       />
     );
