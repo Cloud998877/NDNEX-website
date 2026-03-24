@@ -79,7 +79,7 @@ export const DIRECTOR: TeamMember = {
   role: "CEO",
   education: [], 
   experience: [
-    "Over 21 years of comprehensive healthcare industry expertise.",
+    "Over 22 years of comprehensive healthcare industry expertise.",
     "Successfully led market access strategies for innovative new drugs, including World's First HTA products.",
     "Proven track record of achieving reimbursement in complex therapeutic areas through creative evidence generation.",
     "Author of 12 peer-reviewed articles."
