@@ -374,5 +374,9 @@ export const CLIENTS: Client[] = [
     name: "Youngjin", 
     logo: "/logos/youngjin.JPG", 
     link: "https://www.yungjin.co.kr/" 
-  }
+ },
+{ name: "Bukwang",   logo: "/logos/bukwang.JPG",   link: "https://www.bukwang.co.kr/" },
+{ name: "Kolon",     logo: "/logos/kolon.JPG",     link: "https://www.kolonpharm.co.kr/" },
+{ name: "Opella",    logo: "/logos/opella.JPG",    link: "https://www.opella.com/ko" },
+{ name: "PeopleBio", logo: "/logos/peoplebio.JPG", link: "http://www.peoplebio.net/" }
 ].sort((a, b) => a.name.localeCompare(b.name));
