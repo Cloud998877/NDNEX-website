@@ -11,12 +11,22 @@ import {
   BarChart2,
   Database,
 } from "lucide-react";
-import { CLIENTS } from "../constants";
+import { CLIENTS, NEWS } from "../constants";
 
 type Client = {
   name: string;
   logo?: string; // "/logos/xxx.jpg"
   link?: string;
+};
+
+type NewsItem = {
+  date: string;
+  title: string;
+  summary: string;
+  tag?: string;
+  image?: string; // "/news/xxx.jpg" 또는 외부 URL
+  link?: string;     // 자세히 보기 링크 (선택)
+  linkLabel?: string; // 링크 버튼 문구 (기본: Read More)
 };
 
 export const Home: React.FC = () => {
@@ -218,6 +228,67 @@ export const Home: React.FC = () => {
                   Learn More <ChevronRight size={14} className="ml-1" />
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* News */}
+      <section className="py-32 bg-slate-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern bg-grid-40 opacity-50 pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 border-b border-gray-200 pb-8">
+            <div>
+              <div className="inline-block border-b-2 border-ndnex-orange pb-1 mb-4">
+                <h2 className="text-sm font-bold text-ndnex-dark uppercase tracking-widest">Newsroom</h2>
+              </div>
+              <h3 className="text-4xl md:text-5xl font-bold text-ndnex-dark font-display leading-tight">
+                News &amp; Updates
+              </h3>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {(NEWS as NewsItem[]).map((item, idx) => (
+              <article
+                key={idx}
+                className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group flex flex-col"
+              >
+                {item.image && (
+                  <div className="h-44 overflow-hidden">
+                    <img
+                      src={resolvePublicAsset(item.image)}
+                      alt={item.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                )}
+                <div className="p-8 flex flex-col flex-grow">
+                  <div className="flex items-center gap-3 mb-4">
+                    {item.tag && (
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-ndnex-orange bg-orange-50 px-3 py-1 rounded-full">
+                        {item.tag}
+                      </span>
+                    )}
+                    <span className="text-xs text-gray-400 font-medium">{item.date}</span>
+                  </div>
+                  <h4 className="text-xl font-bold text-ndnex-dark font-display mb-3 leading-tight group-hover:text-ndnex-orange transition-colors">
+                    {item.title}
+                  </h4>
+                  <p className="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">{item.summary}</p>
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-bold text-ndnex-dark group-hover:gap-3 transition-all"
+                    >
+                      {item.linkLabel || "Read More"} <ArrowRight size={16} className="text-ndnex-orange" />
+                    </a>
+                  )}
+                </div>
+              </article>
             ))}
           </div>
         </div>
