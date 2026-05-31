@@ -20,6 +20,7 @@ export const Navbar: React.FC = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Experience', path: '/experience' },
+    { name: 'News', path: '/news' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
