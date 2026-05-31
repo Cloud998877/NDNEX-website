@@ -380,3 +380,17 @@ export const CLIENTS: Client[] = [
 { name: "Opella",    logo: "/logos/opella.JPG",    link: "https://www.opella.com/ko" },
 { name: "PeopleBio", logo: "/logos/peoplebio.JPG", link: "http://www.peoplebio.net/" }
 ].sort((a, b) => a.name.localeCompare(b.name));
+
+export const NEWS = [
+  {
+    date: "Feb 19, 2026",
+    tag: "Sustainability",
+    title: "NDNEX Sets Science-Based Emissions Targets, Validated by SBTi",
+    summary:
+      "NDNEX's greenhouse gas reduction targets have been officially validated by the Science Based Targets initiative (SBTi) as aligned with a 1.5\u00B0C pathway. NDNEX commits to reduce absolute Scope 1 and Scope 2 GHG emissions 42% by 2030 from a 2024 base year, and to measure and reduce its Scope 3 emissions.",
+    image: "",
+    link: "https://sciencebasedtargets.org/target-dashboard",
+    linkLabel: "View on SBTi dashboard",
+  },
+]
+
