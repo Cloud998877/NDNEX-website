@@ -65,7 +65,14 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-8 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4 font-medium">
+        {/* Korean SEO description */}
+        <div className="border-t border-gray-700 pt-8 mb-6">
+          <p className="text-gray-400 text-xs leading-relaxed text-center max-w-4xl mx-auto">
+            NDNEX(엔디넥스)는 의약품 경제성 평가(HEOR), 약가 컨설팅, 보험 급여 등재 및 시장진입(Market Access) 전략을 제공하는 전문 헬스케어 컨설팅 기업입니다. 비용효과 분석, 재정영향분석, 실사용근거(RWE)를 기반으로 제약·의료기기 기업의 보험 등재와 약가 협상을 지원합니다.
+          </p>
+        </div>
+
+        <div className="text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4 font-medium">
           <p>&copy; {new Date().getFullYear()} {COMPANY_INFO.name} Co., Ltd. All rights reserved.</p>
           <div className="flex gap-6">
              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
