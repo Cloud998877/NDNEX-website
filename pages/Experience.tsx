@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PUBLICATIONS, THERAPEUTIC_AREAS } from '../constants';
 import { 
   BookOpen, 
@@ -182,12 +183,12 @@ export const Experience: React.FC = () => {
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
               Explore our services or get in touch with our research team for a consultation.
             </p>
-            <a 
-              href="#/contact" 
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 bg-ndnex-orange text-white px-6 py-4 rounded-full font-bold hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-900/20"
             >
               Contact Us <ChevronRight size={20} />
-            </a>
+            </Link>
           </div>
         </div>
 

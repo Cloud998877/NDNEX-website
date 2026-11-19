@@ -1,20 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# NDNEX website
 
-# Run and deploy your AI Studio app
+Company website for NDNEX (www.ndnex.com), built with Vite, React, TypeScript and Tailwind CSS, and deployed on Vercel.
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/drive/1nKc1MkTDwQZ9saaEdH_WS-DH5rBCpTjf
+```bash
+npm install
+npm run dev
+```
 
-## Run Locally
+## Build
 
-**Prerequisites:**  Node.js
+```bash
+npm run build
+```
 
+The build does three things:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. `vite build` bundles the site into `dist/`.
+2. `vite build --ssr entry-server.tsx` makes a server-side version of the app.
+3. `node prerender.mjs` writes a static HTML file for each page (`dist/about/index.html`, and so on), with its own title, description and canonical URL, so search engines can read every page.
+
+## Adding a page
+
+1. Add the route in `App.tsx`.
+2. Add the same path, with its title and description, to the `routes` list in `prerender.mjs`.
+3. Add the URL to `public/sitemap.xml`.
+
+## Notes
+
+- Pages use clean URLs (`/about`, not `/#/about`). Old `/#/...` links are redirected in the browser by `index.tsx`.
+- Security headers and URL rules live in `vercel.json`.
